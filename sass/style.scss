@@ -21,6 +21,7 @@ h3 {
 }
 
 
+// HEADER
 
 .main-container {
     max-width: 390px;
@@ -28,12 +29,10 @@ h3 {
 }
 
 .logo {
-    
     position: relative;
     box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.15);
     text-align: center;
     padding: 14px 0 5px 0;
-
 }
 
 .logo img{
@@ -55,10 +54,10 @@ h3 {
     font-weight: 500;
 }
 
+
 .main_tilte {
     display: flex;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
     margin-top: 39.5px;
     text-align: center;
@@ -84,6 +83,7 @@ h3 {
     margin-top: 27px;
 }
 
+// MAIN
 
 .Operation {
     display: flex;
@@ -122,7 +122,6 @@ h3 {
     color: white;
 }
 
-
 .btn_content {
     display: flex;
     position: relative;
@@ -135,6 +134,9 @@ h3 {
 .btn_content i {
     font-size: 18px;
 }
+
+
+// SECTION THE RESTAURANTS
 
 .the_restaurants {
     padding: 0px 15px 0px 14px;
@@ -160,6 +162,7 @@ h3 {
     box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
 }
 
+
 .new {
     position: absolute;
     left: 74%;
@@ -174,12 +177,15 @@ h3 {
 
 .poster_content {
     display: flex;
-    padding-top: 16px;
-    padding-left: 13px;
-    padding-bottom: 12px;
+    padding: 16px 0px 12px 13px;
     gap: 120px;
 }
 
+.card-txt h1{
+    padding-bottom: 5px;
+}
+
+// SECTION CONTACT
 
 .contact {
     margin-top: 66px;

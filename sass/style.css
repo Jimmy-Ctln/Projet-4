@@ -48,7 +48,6 @@ h3 {
 .main_tilte {
   display: flex;
   flex-direction: column;
-  justify-content: center;
   align-items: center;
   margin-top: 39.5px;
   text-align: center;
@@ -163,10 +162,12 @@ h3 {
 
 .poster_content {
   display: flex;
-  padding-top: 16px;
-  padding-left: 13px;
-  padding-bottom: 12px;
+  padding: 16px 0px 12px 13px;
   gap: 120px;
+}
+
+.card-txt h1 {
+  padding-bottom: 5px;
 }
 
 .contact {
