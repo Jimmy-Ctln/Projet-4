@@ -17,7 +17,6 @@ h3 {
 .main-container {
   max-width: 390px;
   border: 1px solid red;
-  margin: 20px;
 }
 
 .logo {
@@ -76,14 +75,20 @@ h3 {
 .Operation {
   display: flex;
   flex-direction: column;
-  align-items: center;
   margin-top: 57px;
-  padding: 0px 20px;
+  width: 100%;
 }
 
 .Operation h2 {
   width: 100%;
-  padding-bottom: 26px;
+  padding: 0px 0px 26px 20px;
+}
+
+.buttons_operation {
+  display: flex;
+  flex-direction: column;
+  padding: 0px 20px;
+  gap: 24.92px;
 }
 
 .number {
@@ -92,7 +97,9 @@ h3 {
   align-items: center;
   align-content: center;
   position: absolute;
-  left: 35px;
+  transform: translate(-50%, -50%);
+  right: 92%;
+  bottom: 18%;
   border-radius: 25px;
   background-color: #9356DC;
   font-size: 14.18px;
@@ -102,22 +109,13 @@ h3 {
   color: white;
 }
 
-.buttons_operation {
-  display: flex;
-  flex-direction: column;
-  gap: 24.92px;
-  width: 100%;
-  padding-left: 12.51px;
-}
-
 .btn_content {
   display: flex;
-  align-items: center;
-  align-content: center;
+  position: relative;
   box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.15);
   border-radius: 20px;
   padding: 28.59px 38px;
-  gap: 20px;
+  gap: 27px;
 }
 
 .btn_content i {
@@ -133,6 +131,7 @@ h3 {
 }
 
 .restaurant_poster {
+  position: relative;
   width: 100%;
   border-radius: 15px;
   margin-bottom: 30px;
@@ -150,11 +149,9 @@ h3 {
 
 .new {
   position: absolute;
-  z-index: 1;
-  left: 235px;
-  margin: 15px 15px;
+  left: 74%;
+  top: 5%;
   font-size: 14px;
-  font-weight: 500px;
   color: #008766;
   box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.15);
   border-radius: 2px;
@@ -168,10 +165,6 @@ h3 {
   padding-left: 13px;
   padding-bottom: 12px;
   gap: 120px;
-}
-
-.heart_of_the_poster {
-  padding-top: 10px;
 }
 
 .contact {
