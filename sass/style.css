@@ -153,6 +153,14 @@ h3 {
 .restaurant__txt {
   padding-bottom: 5px;
 }
+.restaurant .restaurant_heart {
+  position: absolute;
+  right: 8%;
+  bottom: 10%;
+}
+.restaurant .restaurant_icon {
+  font-size: 20px;
+}
 
 .contact {
   margin-top: 66px;
@@ -164,12 +172,13 @@ h3 {
   padding: 0px 0px 16px 0px;
 }
 .contact__icon {
+  width: 11px;
+  height: 13px;
   font-size: 14px;
 }
 .contact__link li {
   display: flex;
   align-items: center;
-  align-content: center;
   gap: 11px;
   padding-top: 7px;
   list-style-type: none;
