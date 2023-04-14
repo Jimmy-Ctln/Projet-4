@@ -14,9 +14,17 @@ h3 {
   font-weight: 700;
 }
 
-.main__container {
-  max-width: 375px;
-  border: 1px solid red;
+body {
+  display: flex;
+  justify-content: center;
+  margin: 0;
+}
+
+.main-container {
+  width: 100%;
+  max-width: 1440px;
+  padding: 0px 50px;
+  box-sizing: border-box;
 }
 
 .logo {
@@ -25,8 +33,19 @@ h3 {
   text-align: center;
   padding: 14px 0 5px 0;
 }
+@media (min-width: 376px) {
+  .logo {
+    padding: 31px 0px 31px 0px;
+  }
+}
 .logo .logo__img {
   width: 40%;
+}
+@media (min-width: 376px) {
+  .logo .logo__img {
+    width: 200px;
+    height: 34.2px;
+  }
 }
 
 .location {
@@ -50,9 +69,19 @@ h3 {
   margin-top: 39.5px;
   text-align: center;
 }
+@media (min-width: 376px) {
+  .title {
+    margin-top: 30px;
+  }
+}
 .title__h2 {
   padding: 0px 58px 0px 42px;
   margin-bottom: 10px;
+}
+@media (min-width: 376px) {
+  .title__h2 {
+    margin-bottom: 18px;
+  }
 }
 .title__p {
   padding: 0px 26px 0px 34px;
@@ -62,10 +91,23 @@ h3 {
   width: 60%;
   border-radius: 25px;
   padding: 13px 18.75px;
+  font-size: 16px;
   background: linear-gradient(359deg, #9356DC -11.44%, #FF79DA 123.93%);
   box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
   color: white;
   margin-top: 27px;
+  cursor: pointer;
+  transition: opacity 450ms;
+}
+.title .btn_explore_restaurants:hover {
+  opacity: 0.8;
+}
+@media (min-width: 376px) {
+  .title .btn_explore_restaurants {
+    margin-top: 18px;
+    padding: 13px 5.75px;
+    width: 20%;
+  }
 }
 
 .step {
@@ -78,12 +120,24 @@ h3 {
   width: 100%;
   padding: 0px 0px 26px 20px;
 }
+@media (min-width: 376px) {
+  .step {
+    padding: 0px 0px 26px 0px;
+  }
+}
 
 .btn {
   display: flex;
   flex-direction: column;
   padding: 0px 20px;
   gap: 24.92px;
+}
+@media (min-width: 376px) {
+  .btn {
+    flex-direction: row;
+    justify-content: center;
+    gap: 36px;
+  }
 }
 .btn .btn__content {
   display: flex;
@@ -116,8 +170,24 @@ h3 {
 .restaurant {
   padding: 0px 15px 0px 14px;
 }
+@media (min-width: 376px) {
+  .restaurant {
+    padding: 0px 10%;
+  }
+}
 .restaurant__h2 {
   padding: 54px 0px 20px 5px;
+}
+.restaurant__all {
+  display: block;
+}
+@media (min-width: 376px) {
+  .restaurant__all {
+    display: grid;
+    width: 100%;
+    grid-template-columns: 1fr 1fr;
+    gap: 50px;
+  }
 }
 .restaurant__new {
   position: absolute;
@@ -153,13 +223,15 @@ h3 {
 .restaurant__txt {
   padding-bottom: 5px;
 }
-.restaurant .restaurant_heart {
+.restaurant__heart {
   position: absolute;
   right: 8%;
   bottom: 10%;
 }
-.restaurant .restaurant_icon {
+.restaurant__icon {
   font-size: 20px;
+  cursor: pointer;
+  transition: background-color 200ms;
 }
 
 .contact {
@@ -167,14 +239,37 @@ h3 {
   padding: 22px 0px 22px 25px;
   background-color: #353535;
 }
+@media (min-width: 376px) {
+  .contact {
+    display: flex;
+    flex-direction: row-reverse;
+    padding: 57px 26.42px 30px 16px;
+  }
+}
 .contact__logo {
   width: 40%;
   padding: 0px 0px 16px 0px;
+}
+@media (min-width: 376px) {
+  .contact__logo {
+    width: 100px;
+    padding: 0px;
+    margin: 0px 20px 0px 35px;
+  }
 }
 .contact__icon {
   width: 11px;
   height: 13px;
   font-size: 14px;
+}
+.contact__ul {
+  display: block;
+}
+@media (min-width: 376px) {
+  .contact__ul {
+    display: flex;
+    gap: 55px;
+  }
 }
 .contact__link li {
   display: flex;
@@ -182,6 +277,14 @@ h3 {
   gap: 11px;
   padding-top: 7px;
   list-style-type: none;
+}
+@media (min-width: 376px) {
+  .contact__link li {
+    padding: 0;
+  }
+}
+.contact__link {
+  display: block;
 }
 .contact__link a {
   color: white;
