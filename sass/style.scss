@@ -22,8 +22,6 @@ h3 {
 }
 
 body {
-    // display: flex;
-    // justify-content: center;
     margin: 0;
 }
 
@@ -38,12 +36,12 @@ body {
     box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.15);
     text-align: center;
     padding: 14px 0 5px 0;
-    @media (min-width:376px) {
+    @media (min-width:700px) {
         padding: 31px 0px 31px 0px;
     }
     .logo__img {
-        width: 45%;
-        @media (min-width:376px) {
+        width: 162px;
+        @media (min-width:700px) {
             width: 200px;
             height: 34.2px;
         }
@@ -73,7 +71,7 @@ body {
     text-align: center;
     padding: 30px 0px 57px 0px;
     background-color: #F7F7F7;
-    @media (min-width:376px) {
+    @media (min-width:600px) {
         margin-top: 0px;
         padding: 0px 0px 30px 0px;
         background-color: #F6F6F6;
@@ -82,7 +80,7 @@ body {
         &__h2 {
         padding: 0px 58px 0px 42px;
         margin-bottom: 10px;
-        @media (min-width:376px) {
+        @media (min-width:600px) {
             margin-top: 30px;
             margin-bottom: 18px;
         }
@@ -107,8 +105,6 @@ body {
             
             @media (min-width:376px) {
                 margin-top: 18px;
-                padding: 13px 5.75px;
-                width: 20%;
                 
             }
     }
@@ -125,7 +121,6 @@ body {
 
     
     &__h2 {
-        width: 100%;
         padding: 0px 0px 26px 20px;
     }
     
@@ -139,10 +134,10 @@ body {
 .btn {
     display: flex;
     flex-direction: column;
-    padding: 0px 20px 68px 20px;;
+    padding: 0px 20px 50px 20px;;
     gap: 24.92px;
     
-    @media (min-width:376px) {
+    @media (min-width:700px) {
         flex-direction: row;
         justify-content: center;
         gap: 36px;
@@ -189,9 +184,15 @@ body {
 
     background-color: #F7F7F7;
     padding-bottom: 50px;
+    @media (min-width:600px) {
+        padding: 0px 40px 10px 40px;
+    }
 
     &__h2 {
         padding: 54px 0px 20px 20px;
+        @media (min-width:600px) {
+            padding: 20px 0px 20px 20px;
+        }
         
     }
 
@@ -199,12 +200,11 @@ body {
         display: block;
         padding: 0px 15px 0px 14px;
         
-        @media (min-width:376px) {
+        @media (min-width:600px) {
             display: grid;
             width: 100%;
             grid-template-columns: 1fr 1fr;
-            gap: 50px;
-            ;
+            gap: 30px;
         }
     }
     
@@ -273,18 +273,17 @@ body {
 .contact {
     padding: 22px 0px 22px 25px;
     background-color: #353535;
-    @media (min-width:376px) {
+    @media (min-width:740px) {
         display: flex;
         flex-direction: row-reverse;
         padding: 57px 26.42px 30px 16px;
-        margin-top: 30px;
         
     }
         
     &__logo {
-            width: 30%;
+            width: 100px;
             padding: 0px 0px 16px 0px;
-            @media (min-width:376px) {
+            @media (min-width:740px) {
                 width: 100px;
                 padding: 0px;
                 margin: 0px 20px 0px 35px;
@@ -300,7 +299,7 @@ body {
 
         &__ul {
             display: block;
-            @media (min-width:376px) {
+            @media (min-width:740px) {
                 display: flex;
                 gap: 55px;
                 
@@ -313,7 +312,7 @@ body {
             gap: 11px;
             padding-top: 7px;
             list-style-type: none;
-            @media (min-width:376px) {
+            @media (min-width:740px) {
                 padding: 0;
                 
             }
@@ -321,7 +320,7 @@ body {
 
         &__link {
             display: block;
-            @media (min-width:376px) {
+            @media (min-width:597px) {
                 
                 
             }

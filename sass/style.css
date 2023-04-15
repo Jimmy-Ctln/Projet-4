@@ -30,15 +30,15 @@ body {
   text-align: center;
   padding: 14px 0 5px 0;
 }
-@media (min-width: 376px) {
+@media (min-width: 700px) {
   .logo {
     padding: 31px 0px 31px 0px;
   }
 }
 .logo .logo__img {
-  width: 45%;
+  width: 162px;
 }
-@media (min-width: 376px) {
+@media (min-width: 700px) {
   .logo .logo__img {
     width: 200px;
     height: 34.2px;
@@ -67,7 +67,7 @@ body {
   padding: 30px 0px 57px 0px;
   background-color: #F7F7F7;
 }
-@media (min-width: 376px) {
+@media (min-width: 600px) {
   .title {
     margin-top: 0px;
     padding: 0px 0px 30px 0px;
@@ -78,7 +78,7 @@ body {
   padding: 0px 58px 0px 42px;
   margin-bottom: 10px;
 }
-@media (min-width: 376px) {
+@media (min-width: 600px) {
   .title__h2 {
     margin-top: 30px;
     margin-bottom: 18px;
@@ -105,8 +105,6 @@ body {
 @media (min-width: 376px) {
   .title .btn_explore_restaurants {
     margin-top: 18px;
-    padding: 13px 5.75px;
-    width: 20%;
   }
 }
 
@@ -117,7 +115,6 @@ body {
   width: 100%;
 }
 .step__h2 {
-  width: 100%;
   padding: 0px 0px 26px 20px;
 }
 @media (min-width: 376px) {
@@ -129,10 +126,10 @@ body {
 .btn {
   display: flex;
   flex-direction: column;
-  padding: 0px 20px 68px 20px;
+  padding: 0px 20px 50px 20px;
   gap: 24.92px;
 }
-@media (min-width: 376px) {
+@media (min-width: 700px) {
   .btn {
     flex-direction: row;
     justify-content: center;
@@ -176,19 +173,29 @@ body {
   background-color: #F7F7F7;
   padding-bottom: 50px;
 }
+@media (min-width: 600px) {
+  .restaurant {
+    padding: 0px 40px 10px 40px;
+  }
+}
 .restaurant__h2 {
   padding: 54px 0px 20px 20px;
+}
+@media (min-width: 600px) {
+  .restaurant__h2 {
+    padding: 20px 0px 20px 20px;
+  }
 }
 .restaurant__all {
   display: block;
   padding: 0px 15px 0px 14px;
 }
-@media (min-width: 376px) {
+@media (min-width: 600px) {
   .restaurant__all {
     display: grid;
     width: 100%;
     grid-template-columns: 1fr 1fr;
-    gap: 50px;
+    gap: 30px;
   }
 }
 .restaurant__new {
@@ -240,19 +247,18 @@ body {
   padding: 22px 0px 22px 25px;
   background-color: #353535;
 }
-@media (min-width: 376px) {
+@media (min-width: 740px) {
   .contact {
     display: flex;
     flex-direction: row-reverse;
     padding: 57px 26.42px 30px 16px;
-    margin-top: 30px;
   }
 }
 .contact__logo {
-  width: 30%;
+  width: 100px;
   padding: 0px 0px 16px 0px;
 }
-@media (min-width: 376px) {
+@media (min-width: 740px) {
   .contact__logo {
     width: 100px;
     padding: 0px;
@@ -267,7 +273,7 @@ body {
 .contact__ul {
   display: block;
 }
-@media (min-width: 376px) {
+@media (min-width: 740px) {
   .contact__ul {
     display: flex;
     gap: 55px;
@@ -280,7 +286,7 @@ body {
   padding-top: 7px;
   list-style-type: none;
 }
-@media (min-width: 376px) {
+@media (min-width: 740px) {
   .contact__link li {
     padding: 0;
   }
