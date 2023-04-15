@@ -22,14 +22,13 @@ h3 {
 }
 
 body {
-     display: flex;
-     justify-content: center;
-        margin: 0;
+    // display: flex;
+    // justify-content: center;
+    margin: 0;
 }
 
 .main-container {
     width: 100%;
-    max-width: 1440px;
     padding: 0px 50px;
     box-sizing: border-box;
 }
@@ -43,7 +42,7 @@ body {
         padding: 31px 0px 31px 0px;
     }
     .logo__img {
-        width: 40%;
+        width: 45%;
         @media (min-width:376px) {
             width: 200px;
             height: 34.2px;
@@ -71,8 +70,9 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-top: 39.5px;
     text-align: center;
+    padding: 30px 0px 57px 0px;
+    background-color: #F7F7F7;
     @media (min-width:376px) {
         margin-top: 0px;
         padding: 0px 0px 30px 0px;
@@ -92,7 +92,6 @@ body {
     }
         .btn_explore_restaurants {
             text-align: center;
-            width: 60%;
             border-radius: 25px;
             padding: 13px 18.75px;
             font-size: 16px;
@@ -121,7 +120,7 @@ body {
 .step {
     display: flex;
     flex-direction: column;
-    margin-top: 45px;
+    margin-top: 48px;
     width: 100%;
 
     
@@ -140,7 +139,7 @@ body {
 .btn {
     display: flex;
     flex-direction: column;
-    padding: 0px 20px;
+    padding: 0px 20px 68px 20px;;
     gap: 24.92px;
     
     @media (min-width:376px) {
@@ -187,17 +186,18 @@ body {
 // SECTION THE RESTAURANTS
 
 .restaurant {
-    
-    background-color: #F6F6F6;
 
+    background-color: #F7F7F7;
+    padding-bottom: 50px;
 
     &__h2 {
-        padding: 54px 0px 20px 5px ;
+        padding: 54px 0px 20px 20px;
         
     }
 
     &__all {
         display: block;
+        padding: 0px 15px 0px 14px;
         
         @media (min-width:376px) {
             display: grid;
@@ -224,7 +224,7 @@ body {
                 position: relative;
                 width: 100%;
                 border-radius: 15px;
-                margin-bottom: 30px;
+                margin-bottom: 20px;
                 box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
         }    
                 .restaurant__img {
@@ -271,18 +271,18 @@ body {
 // SECTION CONTACT
 
 .contact {
-    margin-top: 66px;
     padding: 22px 0px 22px 25px;
     background-color: #353535;
     @media (min-width:376px) {
         display: flex;
         flex-direction: row-reverse;
         padding: 57px 26.42px 30px 16px;
+        margin-top: 30px;
         
     }
         
     &__logo {
-            width: 40%;
+            width: 30%;
             padding: 0px 0px 16px 0px;
             @media (min-width:376px) {
                 width: 100px;
