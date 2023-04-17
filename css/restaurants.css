@@ -6,15 +6,14 @@
 
 .main__container {
   width: 100%;
-  max-width: 375px;
+  display: block;
   box-sizing: border-box;
   border: 1px solid red;
 }
-
 .arrow__icon {
   position: absolute;
   left: 23px;
-  top: 24px;
+  top: 20px;
   width: 17.2px;
   height: 16px;
 }
@@ -22,16 +21,29 @@
 .logo {
   box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.15);
   text-align: center;
-  padding: 14px 0 5px 0;
+  padding: 14px 0 10px 0;
   z-index: 1;
+}
+@media (min-width: 768px) {
+  .logo {
+    padding: 31px 0px 31px 0px;
+  }
 }
 .logo .logo__img {
   width: 162px;
 }
+@media (min-width: 768px) {
+  .logo .logo__img {
+    width: 200px;
+    height: 34.2px;
+  }
+}
 
 .restaurant .restaurant__img {
   width: 100%;
-  top: 0px;
+  height: 275px;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 .card {
@@ -42,10 +54,22 @@
   border-radius: 25px 25px 0px 0px;
   border: 1px solid green;
 }
+@media (min-width: 768px) {
+  .card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
 .card__h1 {
   font-family: "Shrikhand";
   font-size: 28px;
   padding: 32px 17px 42px 17px;
+}
+@media (min-width: 768px) {
+  .card__h1 {
+    padding: 32px 17px 40px 17px;
+  }
 }
 .card__icon {
   position: absolute;
