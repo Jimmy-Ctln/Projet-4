@@ -62,6 +62,11 @@
   text-transform: uppercase;
   margin: 12px 87px 12px 15px;
 }
+.menu__h2--underbar {
+  border-bottom: 3px solid #99E2D0;
+  padding-bottom: 5px;
+  width: 40px;
+}
 .menu__content {
   display: flex;
   flex-direction: column;
