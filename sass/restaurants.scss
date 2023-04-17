@@ -1,0 +1,178 @@
+$primary-color: #9356DC;
+$second-color: #FF79DA;
+$third-color: #99E2D0; 
+$title-policy: "Shrikhand";
+$txt-policy: 'Roboto', sans-serif;
+$lnr-gradient:  linear-gradient(359deg, #9356DC -11.44%, #FF79DA 123.93%);
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: $txt-policy;
+}
+
+.main__container {
+    width: 100%;
+    max-width: 375px;
+    box-sizing: border-box;
+    border: 1px solid red;
+}
+
+.arrow__icon {
+    position: absolute;
+    left: 23px;
+    top: 24px;
+    width: 17.2px;
+    height: 16px;
+}
+
+.logo {
+    // position: absolute;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.15);
+    text-align: center;
+    padding: 14px 0 5px 0;
+    z-index: 1;
+    // @media (min-width:700px) {
+    //     padding: 31px 0px 31px 0px;
+    // }
+    .logo__img {
+        width: 162px;
+        // @media (min-width:700px) {
+        //     width: 200px;
+        //     height: 34.2px;
+        // }
+    }
+}
+
+.restaurant {
+    
+    .restaurant__img {
+        width: 100%;
+        top: 0px;
+    
+    }
+}
+
+
+.card {
+    top: 210px;
+    width: 100%;
+    background-color: #F7F7F7;
+    border-radius: 25px 25px 0px 0px;
+    border: 1px solid green;
+        &__h1 {
+            font-family: $title-policy;
+            font-size: 28px;
+            padding: 32px 17px 42px 17px;
+        }
+            &__icon {
+                position: absolute;
+                font-size: 20px;
+                cursor: pointer;
+                top: 40px;
+                right: 41px;
+        }
+}
+
+.menu {
+    
+        &__h2 {
+            font-weight: 300;
+            font-size: 16px;
+            line-height: 19px;
+            text-transform: uppercase;
+            margin: 12px 87px 12px 15px;
+        }
+            &__content {
+                display: flex;
+                flex-direction: column;
+                margin: 12px ;
+                gap: 5px;
+                padding: 15px 12px 12px 15px;
+                background-color: #FFFFFF;
+                border-radius: 15.0431px;
+                box-shadow: 0px 4.01149px 15.0431px rgba(0, 0, 0, 0.1);
+            }
+                &__price {
+                    display: flex;
+                    justify-content: space-between;
+                }
+
+                .menu__margin--btm {
+                    margin-bottom: 40px;
+                }
+}
+
+
+.btn {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+
+    .btn__order {
+        text-align: center;
+        width: 186px;
+        border-radius: 25px;
+        padding: 13px 18.75px;
+        margin-bottom: 40px;
+        background: $lnr-gradient;
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
+            color: white;
+            cursor: pointer;
+            transition: opacity 450ms;
+                &:hover {
+                    opacity: 0.8;
+            }
+    }
+}
+
+.contact {
+    padding: 22px 0px 22px 25px;
+    bottom: -1318px;
+    background-color: #353535;
+    display: flex;
+    flex-direction: column;
+        &__logo {
+            width: 137.58px;
+            
+        }
+            &__icon {
+                width: 11px;
+                height: 13px;
+                font-size: 14px ;
+            }
+
+            &__ul {
+                display: block;
+                // @media (min-width:740px) {
+                //     display: flex;
+                //     gap: 55px;
+                    
+                // }
+            }
+
+            &__link li {
+                display: flex;
+                align-items: center;
+                gap: 11px;
+                padding-top: 7px;
+                list-style-type: none;
+                // @media (min-width:740px) {
+                //     padding: 0;
+                    
+                // }
+            }
+    
+            &__link {
+                display: block;
+                // @media (min-width:597px) {
+                    
+                    
+                // }
+            }
+            
+            &__link a {
+                color: white;
+                text-decoration: none;
+            }
+}
