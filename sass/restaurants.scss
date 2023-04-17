@@ -55,7 +55,8 @@ $lnr-gradient:  linear-gradient(359deg, #9356DC -11.44%, #FF79DA 123.93%);
 
 
 .card {
-    top: 210px;
+    position: relative;
+    top: -47px;
     width: 100%;
     background-color: #F7F7F7;
     border-radius: 25px 25px 0px 0px;
@@ -127,8 +128,9 @@ $lnr-gradient:  linear-gradient(359deg, #9356DC -11.44%, #FF79DA 123.93%);
 }
 
 .contact {
+    position: relative;
+    top: -47px;
     padding: 22px 0px 22px 25px;
-    bottom: -1318px;
     background-color: #353535;
     display: flex;
     flex-direction: column;
