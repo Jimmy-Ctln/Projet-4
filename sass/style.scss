@@ -207,6 +207,13 @@ body {
             gap: 30px;
         }
     }
+
+    &__link {
+        display: block;
+        cursor: pointer;
+        color: black;
+        text-decoration: none;
+    }
     
     
         &__new {

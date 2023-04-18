@@ -198,6 +198,12 @@ body {
     gap: 30px;
   }
 }
+.restaurant__link {
+  display: block;
+  cursor: pointer;
+  color: black;
+  text-decoration: none;
+}
 .restaurant__new {
   position: absolute;
   left: 74%;

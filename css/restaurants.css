@@ -6,9 +6,7 @@
 
 .main__container {
   width: 100%;
-  display: block;
   box-sizing: border-box;
-  border: 1px solid red;
 }
 .arrow__icon {
   position: absolute;
@@ -68,7 +66,6 @@
   width: 100%;
   background-color: #F7F7F7;
   border-radius: 25px 25px 0px 0px;
-  border: 1px solid green;
 }
 @media (min-width: 768px) {
   .all__card {
@@ -95,8 +92,8 @@
   position: absolute;
   font-size: 25px;
   cursor: pointer;
-  top: 48%;
-  left: 50%;
+  top: 45%;
+  left: 83%;
   transform: translate(-50%, -50%);
 }
 @media (min-width: 768px) {
@@ -161,6 +158,10 @@
 }
 .btn .btn__order:hover {
   opacity: 0.8;
+}
+
+footer {
+  height: 60px;
 }
 
 .contact {
