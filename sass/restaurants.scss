@@ -27,6 +27,10 @@ $lnr-gradient:  linear-gradient(359deg, #9356DC -11.44%, #FF79DA 123.93%);
     top: 20px;
     width: 17.2px;
     height: 16px;
+        @media (min-width:768px) {
+            
+            top: 32px;
+        }
 }
 
 .logo {
@@ -35,7 +39,7 @@ $lnr-gradient:  linear-gradient(359deg, #9356DC -11.44%, #FF79DA 123.93%);
     padding: 14px 0 10px 0;
     z-index: 1;
     @media (min-width:768px) {
-        padding: 31px 0px 31px 0px;
+        padding: 20px 0px 20px 0px;
     }
     .logo__img {
         width: 162px;
@@ -52,39 +56,47 @@ $lnr-gradient:  linear-gradient(359deg, #9356DC -11.44%, #FF79DA 123.93%);
         width: 100%;
         height: 275px;
         object-fit: cover;
-        
-    
+        @media (min-width: 768px) {
+            height: 460px;
+        }
     }
 }
 
-
-.card {
-    position: relative;
-    top: -47px;
-    width: 100%;
-    background-color: #F7F7F7;
-    border-radius: 25px 25px 0px 0px;
-    border: 1px solid green;
+.all {
     @media (min-width: 768px) {
         display: flex;
-        flex-direction: column;
-        align-items: center;
+        justify-content: center;
     }
-        &__h1 {
-            font-family: $title-policy;
-            font-size: 28px;
-            padding: 32px 17px 42px 17px;
-            @media (min-width: 768px) {
-                padding: 32px 17px 40px 17px;
+
+    &__card {
+        position: relative;
+        top: -47px;
+        width: 100%;
+        background-color: #F7F7F7;
+        border-radius: 25px 25px 0px 0px;
+        border: 1px solid green;
+        @media (min-width: 768px) {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            width: 80%;;
+        }
+    }
+            &__h1 {
+                font-family: $title-policy;
+                font-size: 28px;
+                padding: 32px 17px 42px 17px;
+                @media (min-width: 768px) {
+                    padding: 32px 17px 40px 17px;
+                }
             }
-        }
-            &__icon {
-                position: absolute;
-                font-size: 20px;
-                cursor: pointer;
-                top: 40px;
-                right: 41px;
-        }
+                &__icon {
+                    position: absolute;
+                    font-size: 20px;
+                    cursor: pointer;
+                    top: 40px;
+                    right: 41px;
+            }
 }
 
 .menu {
