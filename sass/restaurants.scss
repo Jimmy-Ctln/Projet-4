@@ -69,7 +69,7 @@ $lnr-gradient:  linear-gradient(359deg, #9356DC -11.44%, #FF79DA 123.93%);
 
     &__card {
         position: relative;
-        top: -47px;
+        margin-top: -40px;
         width: 100%;
         background-color: #F7F7F7;
         border-radius: 25px 25px 0px 0px;
@@ -168,16 +168,8 @@ $lnr-gradient:  linear-gradient(359deg, #9356DC -11.44%, #FF79DA 123.93%);
     }
 }
 
-// footer {
-//     height: 60px;
-// }
-
-//Ajouter un padding négatif à la place pour faire monter tout le contenus
-
 
 .contact {
-    position: relative;
-    top: -47px;
     padding: 22px 0px 22px 25px;
     background-color: #353535;
     display: flex;
