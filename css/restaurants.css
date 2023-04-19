@@ -14,6 +14,12 @@
   top: 20px;
   width: 17.2px;
   height: 16px;
+  cursor: pointer;
+  color: #353535;
+  transition: transform ease-in-out 250ms;
+}
+.arrow__icon:hover {
+  transform: scale(1.5);
 }
 @media (min-width: 768px) {
   .arrow__icon {

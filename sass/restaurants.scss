@@ -25,6 +25,13 @@ $lnr-gradient:  linear-gradient(359deg, #9356DC -11.44%, #FF79DA 123.93%);
     top: 20px;
     width: 17.2px;
     height: 16px;
+    cursor: pointer;
+    color: #353535;
+    transition: transform ease-in-out 250ms;
+        &:hover {
+            transform: scale(1.5);
+        }
+        
         @media (min-width:768px) {
             
             top: 32px;
