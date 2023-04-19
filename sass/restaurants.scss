@@ -81,29 +81,27 @@ $lnr-gradient:  linear-gradient(359deg, #9356DC -11.44%, #FF79DA 123.93%);
         }
     }   
         &__title {
-            position: relative;
+            display: flex;
+            align-items: baseline;
+            gap: 24px;
+            padding: 32px 17px 42px 17px;
+            
+            @media (min-width: 768px) {
+                padding: 50px 0px 40px 0px;
+            }
             
         }
         
             &__h1 {
                 font-family: $title-policy;
                 font-size: 28px;
-                padding: 32px 17px 42px 17px;
-                @media (min-width: 768px) {
-                    padding: 32px 17px 40px 17px;
-                }
             }
                 &__icon {
-                    position: absolute;
                     font-size: 25px;
                     cursor: pointer;
-                    top: 45%;
-                    left: 83%;
-                    transform: translate(-50%, -50%);
+                    
                         @media (min-width: 768px) {
-                            top: 48%;
-                            left: 105%;
-                            transform: translate(-50%, -50%);
+                            
                     }
         }
         
@@ -170,9 +168,11 @@ $lnr-gradient:  linear-gradient(359deg, #9356DC -11.44%, #FF79DA 123.93%);
     }
 }
 
-footer {
-    height: 60px;
-}
+// footer {
+//     height: 60px;
+// }
+
+//Ajouter un padding négatif à la place pour faire monter tout le contenus
 
 
 .contact {

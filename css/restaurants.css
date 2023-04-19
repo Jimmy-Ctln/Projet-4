@@ -76,34 +76,24 @@
   }
 }
 .all__title {
-  position: relative;
+  display: flex;
+  align-items: baseline;
+  gap: 24px;
+  padding: 32px 17px 42px 17px;
+}
+@media (min-width: 768px) {
+  .all__title {
+    padding: 50px 0px 40px 0px;
+  }
 }
 .all__h1 {
   font-family: "Shrikhand";
   font-size: 28px;
-  padding: 32px 17px 42px 17px;
-}
-@media (min-width: 768px) {
-  .all__h1 {
-    padding: 32px 17px 40px 17px;
-  }
 }
 .all__icon {
-  position: absolute;
   font-size: 25px;
   cursor: pointer;
-  top: 45%;
-  left: 83%;
-  transform: translate(-50%, -50%);
 }
-@media (min-width: 768px) {
-  .all__icon {
-    top: 48%;
-    left: 105%;
-    transform: translate(-50%, -50%);
-  }
-}
-
 .menu__h2 {
   font-weight: 300;
   font-size: 16px;
@@ -158,10 +148,6 @@
 }
 .btn .btn__order:hover {
   opacity: 0.8;
-}
-
-footer {
-  height: 60px;
 }
 
 .contact {
