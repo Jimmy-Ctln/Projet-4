@@ -246,7 +246,6 @@ body {
   bottom: 27px;
 }
 .restaurant__icon--black {
-  display: none;
   position: relative;
   cursor: pointer;
   opacity: 1;
