@@ -195,7 +195,11 @@ body {
     background-color: #F7F7F7;
     padding-bottom: 50px;
     @media (min-width:768px) {
-        padding: 0px 100px 10px 100px;;
+        padding: 0px 50px 10px 50px;
+    }
+
+    @media (min-width: 1300px) {
+        padding: 0px 172.78px 10px 172.78px;
     }
 
     &__h2 {
@@ -214,6 +218,7 @@ body {
             display: grid;
             width: 100%;
             grid-template-columns: 1fr 1fr;
+            padding: 0;
             gap: 30px;
         }
     }
