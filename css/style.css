@@ -245,15 +245,25 @@ body {
   right: 29px;
   bottom: 27px;
 }
-.restaurant__icon {
-  font-size: 25px;
+.restaurant__icon--black {
+  display: none;
+  position: relative;
   cursor: pointer;
-  transition: background-color 200ms;
+  opacity: 1;
 }
-@media (min-width: 600px) {
-  .restaurant__icon {
-    font-size: 30px;
-  }
+.restaurant__icon--full {
+  position: absolute;
+  opacity: 0;
+  left: 0px;
+  cursor: pointer;
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  background: linear-gradient(#FF79DA, #9356DC);
+  transition: all 400ms;
+}
+.restaurant__icon--full:active {
+  opacity: 1;
 }
 
 .contact {
