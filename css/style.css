@@ -101,6 +101,7 @@ body {
 }
 .title .btn_explore_restaurants:hover {
   opacity: 0.8;
+  box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.25);
 }
 @media (min-width: 768px) {
   .title .btn_explore_restaurants {
