@@ -30,7 +30,7 @@ body {
   text-align: center;
   padding: 14px 0 5px 0;
 }
-@media (min-width: 700px) {
+@media (min-width: 768px) {
   .logo {
     padding: 31px 0px 31px 0px;
   }
@@ -38,7 +38,7 @@ body {
 .logo .logo__img {
   width: 162px;
 }
-@media (min-width: 700px) {
+@media (min-width: 768px) {
   .logo .logo__img {
     width: 200px;
     height: 34.2px;
@@ -67,7 +67,7 @@ body {
   padding: 30px 0px 57px 0px;
   background-color: #F7F7F7;
 }
-@media (min-width: 600px) {
+@media (min-width: 768px) {
   .title {
     margin-top: 0px;
     padding: 0px 0px 30px 0px;
@@ -102,7 +102,7 @@ body {
 .title .btn_explore_restaurants:hover {
   opacity: 0.8;
 }
-@media (min-width: 376px) {
+@media (min-width: 768px) {
   .title .btn_explore_restaurants {
     margin-top: 18px;
   }
@@ -138,6 +138,7 @@ body {
 }
 .btn .btn__content {
   display: flex;
+  align-items: center;
   position: relative;
   box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.15);
   border-radius: 20px;
@@ -174,15 +175,15 @@ body {
   background-color: #F7F7F7;
   padding-bottom: 50px;
 }
-@media (min-width: 600px) {
+@media (min-width: 768px) {
   .restaurant {
-    padding: 0px 40px 10px 40px;
+    padding: 0px 100px 10px 100px;
   }
 }
 .restaurant__h2 {
   padding: 54px 0px 20px 20px;
 }
-@media (min-width: 600px) {
+@media (min-width: 768px) {
   .restaurant__h2 {
     padding: 20px 0px 20px 20px;
   }
@@ -191,7 +192,7 @@ body {
   display: block;
   padding: 0px 15px 0px 14px;
 }
-@media (min-width: 600px) {
+@media (min-width: 768px) {
   .restaurant__all {
     display: grid;
     width: 100%;
@@ -241,13 +242,18 @@ body {
 }
 .restaurant__heart {
   position: absolute;
-  right: 8%;
-  bottom: 10%;
+  right: 29px;
+  bottom: 27px;
 }
 .restaurant__icon {
-  font-size: 20px;
+  font-size: 25px;
   cursor: pointer;
   transition: background-color 200ms;
+}
+@media (min-width: 600px) {
+  .restaurant__icon {
+    font-size: 30px;
+  }
 }
 
 .contact {

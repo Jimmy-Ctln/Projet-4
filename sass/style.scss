@@ -36,12 +36,12 @@ body {
     box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.15);
     text-align: center;
     padding: 14px 0 5px 0;
-    @media (min-width:700px) {
+    @media (min-width:768px) {
         padding: 31px 0px 31px 0px;
     }
     .logo__img {
         width: 162px;
-        @media (min-width:700px) {
+        @media (min-width:768px) {
             width: 200px;
             height: 34.2px;
         }
@@ -71,7 +71,7 @@ body {
     text-align: center;
     padding: 30px 0px 57px 0px;
     background-color: #F7F7F7;
-    @media (min-width:600px) {
+    @media (min-width:768px) {
         margin-top: 0px;
         padding: 0px 0px 30px 0px;
         background-color: #F6F6F6;
@@ -103,7 +103,7 @@ body {
                 opacity: 0.8;
             }
             
-            @media (min-width:376px) {
+            @media (min-width:768px) {
                 margin-top: 18px;
                 
             }
@@ -145,6 +145,7 @@ body {
     }
         .btn__content {
             display: flex;
+            align-items: center;
             position: relative;
             box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.15);
             border-radius: 20px;
@@ -175,12 +176,6 @@ body {
                 height: 14.55px;
                 padding: 5px;
                 color: white;
-
-                // @media (min-width: 700px) {
-                //     bottom: 36px;
-                // }
-
-                // @media (min-width:)
         }
 }
 
@@ -191,13 +186,13 @@ body {
 
     background-color: #F7F7F7;
     padding-bottom: 50px;
-    @media (min-width:600px) {
-        padding: 0px 40px 10px 40px;
+    @media (min-width:768px) {
+        padding: 0px 100px 10px 100px;;
     }
 
     &__h2 {
         padding: 54px 0px 20px 20px;
-        @media (min-width:600px) {
+        @media (min-width:768px) {
             padding: 20px 0px 20px 20px;
         }
         
@@ -207,7 +202,7 @@ body {
         display: block;
         padding: 0px 15px 0px 14px;
         
-        @media (min-width:600px) {
+        @media (min-width:768px) {
             display: grid;
             width: 100%;
             grid-template-columns: 1fr 1fr;
@@ -261,19 +256,23 @@ body {
 
                         &__heart {
                             position: absolute;
-                            right: 8%;
-                            bottom: 10%;
+                            right: 29px;
+                            bottom: 27px;
                         }
 
         
                         &__icon {
-                            font-size: 20px;
+                            font-size: 25px;
                             cursor: pointer;
                             transition: background-color 200ms;
                             // &:active {
                                 // Peut être utiliser une animation à la place d'une transition avec "animation-fill-mode"
                                 
                             // }
+
+                            @media (min-width: 600px) {
+                                font-size: 30px;
+                            }
                         }
 }
 
