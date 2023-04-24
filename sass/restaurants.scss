@@ -5,6 +5,17 @@ $title-policy: "Shrikhand";
 $txt-policy: 'Roboto', sans-serif;
 $lnr-gradient:  linear-gradient(359deg, #9356DC -11.44%, #FF79DA 123.93%);
 
+// @keyframes animation__content {
+
+//     0% {
+//         transform: scaleX(0);
+//     }
+//     100% {
+//         transform: scaleX(1);
+//     }  
+
+// }
+
 * {
     margin: 0;
     padding: 0;
@@ -130,22 +141,56 @@ $lnr-gradient:  linear-gradient(359deg, #9356DC -11.44%, #FF79DA 123.93%);
             }
                 &__content {
                     display: flex;
+                    position: relative;
+                    z-index: 0;
                     flex-direction: column;
                     margin: 12px ;
+                    overflow: hidden;
                     gap: 5px;
                     padding: 15px 12px 12px 15px;
                     background-color: #FFFFFF;
                     border-radius: 15.0431px;
                     box-shadow: 0px 4.01149px 15.0431px rgba(0, 0, 0, 0.1);
+                    transition: 250ms ease-in-out;
+                    &:hover {
+                        padding-right: 70px;
+                    }
                 }
+
+                &__content::before {
+                    content: "\f058";
+                    font-family: "Font Awesome 6 Free";
+                    font-size: 20px;
+                    color: white;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    z-index: -1;
+                    position: absolute;
+                    width: 59px;
+                    height: 75px;
+                    right: 0;
+                    bottom: 0px;
+                    background-color: $third-color;
+                    transform-origin: right;
+                    transform: scaleX(0);
+                    transition: transform 250ms ease-in-out;        
+                }
+                
+                &__content:hover::before {
+                    transform: scaleX(1);
+                    z-index: 1;
+                }
+                
+
+                
                     &__price {
                         display: flex;
                         justify-content: space-between;
                         @media (min-width: 768px) {
                             gap: 300px;
-                        
-                }
-                }
+                        }
+                    }
 
                 &__price--color {
                     font-weight: 700;
