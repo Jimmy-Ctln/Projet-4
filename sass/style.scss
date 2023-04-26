@@ -316,13 +316,13 @@ body {
                             background-clip: text;
                             -webkit-background-clip: text;
                             background: linear-gradient(#FF79DA, #9356DC);
+                            -webkit-text-fill-color: transparent; 
                             color: transparent;
                             left: 0;
                             z-index: 0;
                             opacity: 0;
                             transition-duration: 400ms;
                         }                        
-                        
                         
 }
 
