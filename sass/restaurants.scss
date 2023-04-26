@@ -5,16 +5,16 @@ $title-policy: "Shrikhand";
 $txt-policy: 'Roboto', sans-serif;
 $lnr-gradient:  linear-gradient(359deg, #9356DC -11.44%, #FF79DA 123.93%);
 
-// @keyframes animation__content {
+@keyframes menu-delay {
 
-//     0% {
-//         transform: scaleX(0);
-//     }
-//     100% {
-//         transform: scaleX(1);
-//     }  
-
-// }
+    0% {
+        opacity: 0;
+        translate: 20%;
+    }
+    100% {
+        opacity: 1;
+    }  
+}
 
 * {
     margin: 0;
@@ -126,7 +126,21 @@ $lnr-gradient:  linear-gradient(359deg, #9356DC -11.44%, #FF79DA 123.93%);
 }
 
 .menu {
-    
+
+    &__entry {
+
+        animation: menu-delay 1s ease-in-out;
+    }
+
+    &__dish {
+        animation: menu-delay 1.5s ease-in-out;
+    }
+
+    &__dessert {
+        
+        animation: menu-delay 2s ease-in-out;
+    }
+        
         &__h2 {
             font-weight: 300;
             font-size: 16px;

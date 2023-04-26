@@ -5,6 +5,17 @@ $title-policy: "Shrikhand";
 $txt-policy: 'Roboto', sans-serif;
 $lnr-gradient:  linear-gradient(359deg, #9356DC -11.44%, #FF79DA 123.93%);
 
+// @keyframes menu-delay {
+
+//     0% {
+//         .menu
+//     }
+
+
+
+
+// }
+
 * {
     margin:0;
     padding: 0;
@@ -289,6 +300,7 @@ body {
                             position: relative;
                             z-index: 1;
                             cursor: pointer;
+                            font-size: 24px;
                             opacity: 1;
                             color: black;
                             &:hover + .restaurant__icon--full{
@@ -299,6 +311,7 @@ body {
                         
                         &__icon--full {
                             position: absolute;
+                            font-size: 24px;
                             cursor: pointer;
                             background-clip: text;
                             -webkit-background-clip: text;

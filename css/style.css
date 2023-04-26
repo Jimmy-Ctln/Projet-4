@@ -274,6 +274,7 @@ body {
   position: relative;
   z-index: 1;
   cursor: pointer;
+  font-size: 24px;
   opacity: 1;
   color: black;
 }
@@ -282,6 +283,7 @@ body {
 }
 .restaurant__icon--full {
   position: absolute;
+  font-size: 24px;
   cursor: pointer;
   background-clip: text;
   -webkit-background-clip: text;

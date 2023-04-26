@@ -1,3 +1,12 @@
+@keyframes menu-delay {
+  0% {
+    opacity: 0;
+    translate: 20%;
+  }
+  100% {
+    opacity: 1;
+  }
+}
 * {
   margin: 0;
   padding: 0;
@@ -99,6 +108,15 @@
 .all__icon {
   font-size: 25px;
   cursor: pointer;
+}
+.menu__entry {
+  animation: menu-delay 1s ease-in-out;
+}
+.menu__dish {
+  animation: menu-delay 1.5s ease-in-out;
+}
+.menu__dessert {
+  animation: menu-delay 2s ease-in-out;
 }
 .menu__h2 {
   font-weight: 300;
