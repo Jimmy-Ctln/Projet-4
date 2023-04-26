@@ -151,12 +151,14 @@ $lnr-gradient:  linear-gradient(359deg, #9356DC -11.44%, #FF79DA 123.93%);
                     background-color: #FFFFFF;
                     border-radius: 15.0431px;
                     box-shadow: 0px 4.01149px 15.0431px rgba(0, 0, 0, 0.1);
-                    transition: 250ms ease-in-out;
-                    // &:hover > .menu__price {
-                    //     right: 50px;
-                    // }
+                    &:hover {
+                        .menu__price {
+                            right: 65px;
+                        }
+                    }
                 }
-
+ 
+                
                 &__content::before {
                     content: "\f058";
                     font-family: "Font Awesome 6 Free";
@@ -166,25 +168,22 @@ $lnr-gradient:  linear-gradient(359deg, #9356DC -11.44%, #FF79DA 123.93%);
                     justify-content: center;
                     align-items: center;
                     position: absolute;
-                    width: 59px;
+                    width: 60px;
                     opacity: 1;
                     height: 75px;
                     bottom: 0px;
-                    right: -10%;
+                    right: -62px;
                     background-color: $third-color;
-                    transition: 250ms ease-in-out;
+                    transition: 220ms ease-in-out;
                 }
                 
                 &__content:hover::before {
-                    right: 0%;
+                    right: 0px;
                 }
                 
                 
-
-                
-                    &__info {
+                &__info {
                         display: flex;
-                        position: relative;
                         justify-content: space-between;
                         transition: 250ms;
                         @media (min-width: 768px) {
@@ -193,8 +192,11 @@ $lnr-gradient:  linear-gradient(359deg, #9356DC -11.44%, #FF79DA 123.93%);
                     }
 
                 &__price {
+                    position: relative;
+                    right: 0px;
                     font-weight: 700;
                     color: #353535;
+                    transition: 220ms ease-in-out;
                 }
 
                     .menu__margin--btm {
