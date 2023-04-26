@@ -61,6 +61,10 @@ body {
             font-size: 16px;
             font-weight: 500;
     }
+
+    &__color {
+        color: #353535;
+    }
 }
 
 
@@ -169,7 +173,16 @@ body {
             &__icon {
             font-size: 18px;
         }
-            &__number {
+
+        &__color--grey {
+            color: #7E7E7E;
+        }
+
+        &__color--purple {
+            color: #9356DC;
+        }
+            
+        &__number {
                 display: flex;
                 justify-content: center;
                 align-items: center;
@@ -320,11 +333,11 @@ body {
             }
         }
     
-        
         &__icon {
             width: 11px;
             height: 13px;
             font-size: 14px ;
+            color: #FFFFFF;
         }
 
         &__ul {
