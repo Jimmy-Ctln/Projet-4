@@ -285,30 +285,32 @@ body {
                             bottom: 27px;
         }
 
-                        &__icon--black {
+                        &__icon--black { 
                             position: relative;
+                            z-index: 1;
                             cursor: pointer;
                             opacity: 1;
-                        }
-
-                        &__icon--full {
-                            position: absolute;
-                            opacity: 0;
-                            left: 0px;
-                            cursor: pointer;
-                            -webkit-background-clip: text;
-                            background-clip: text;
-                            color: transparent;
-                            background: linear-gradient(#FF79DA, #9356DC);
-                            transition: all 400ms;
-                            &:active {
+                            color: black;
+                            &:hover + .restaurant__icon--full{
                                 opacity: 1;
                             }
                         }
                         
-
                         
-            
+                        &__icon--full {
+                            position: absolute;
+                            cursor: pointer;
+                            background-clip: text;
+                            -webkit-background-clip: text;
+                            background: linear-gradient(#FF79DA, #9356DC);
+                            color: transparent;
+                            left: 0;
+                            z-index: 0;
+                            opacity: 0;
+                            transition-duration: 400ms;
+                        }                        
+                        
+                        
 }
 
 // SECTION CONTACT

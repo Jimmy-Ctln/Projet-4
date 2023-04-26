@@ -272,22 +272,25 @@ body {
 }
 .restaurant__icon--black {
   position: relative;
+  z-index: 1;
   cursor: pointer;
+  opacity: 1;
+  color: black;
+}
+.restaurant__icon--black:hover + .restaurant__icon--full {
   opacity: 1;
 }
 .restaurant__icon--full {
   position: absolute;
-  opacity: 0;
-  left: 0px;
   cursor: pointer;
-  -webkit-background-clip: text;
   background-clip: text;
-  color: transparent;
+  -webkit-background-clip: text;
   background: linear-gradient(#FF79DA, #9356DC);
-  transition: all 400ms;
-}
-.restaurant__icon--full:active {
-  opacity: 1;
+  color: transparent;
+  left: 0;
+  z-index: 0;
+  opacity: 0;
+  transition-duration: 400ms;
 }
 
 .contact {
