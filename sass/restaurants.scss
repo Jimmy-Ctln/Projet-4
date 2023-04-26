@@ -160,21 +160,20 @@ $lnr-gradient:  linear-gradient(359deg, #9356DC -11.44%, #FF79DA 123.93%);
  
                 
                 &__content::before {
-                    content: "\f058";
-                    font-family: "Font Awesome 6 Free";
-                    font-size: 20px;
-                    color: white;
-                    display: flex;
-                    justify-content: center;
-                    align-items: center;
+                    content: "";
+                    background-image: url(/images/icons/Check.png);
+                    background-position: center;
+                    background-repeat: no-repeat;
+                    background-size: 20px;
+                    background-color: $third-color;
+                    color: red;
                     position: absolute;
                     width: 60px;
                     opacity: 1;
                     height: 75px;
                     bottom: 0px;
                     right: -62px;
-                    background-color: $third-color;
-                    transition: 220ms ease-in-out;
+                    transition: 200ms;
                 }
                 
                 &__content:hover::before {
@@ -185,7 +184,6 @@ $lnr-gradient:  linear-gradient(359deg, #9356DC -11.44%, #FF79DA 123.93%);
                 &__info {
                         display: flex;
                         justify-content: space-between;
-                        transition: 250ms;
                         @media (min-width: 768px) {
                             gap: 300px;
                         }
@@ -196,7 +194,7 @@ $lnr-gradient:  linear-gradient(359deg, #9356DC -11.44%, #FF79DA 123.93%);
                     right: 0px;
                     font-weight: 700;
                     color: #353535;
-                    transition: 220ms ease-in-out;
+                    transition: 200ms;
                 }
 
                     .menu__margin--btm {

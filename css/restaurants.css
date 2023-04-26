@@ -129,21 +129,20 @@
   right: 65px;
 }
 .menu__content::before {
-  content: "\f058";
-  font-family: "Font Awesome 6 Free";
-  font-size: 20px;
-  color: white;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  content: "";
+  background-image: url(/images/icons/Check.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 20px;
+  background-color: #99E2D0;
+  color: red;
   position: absolute;
   width: 60px;
   opacity: 1;
   height: 75px;
   bottom: 0px;
   right: -62px;
-  background-color: #99E2D0;
-  transition: 220ms ease-in-out;
+  transition: 200ms;
 }
 .menu__content:hover::before {
   right: 0px;
@@ -151,7 +150,6 @@
 .menu__info {
   display: flex;
   justify-content: space-between;
-  transition: 250ms;
 }
 @media (min-width: 768px) {
   .menu__info {
@@ -163,7 +161,7 @@
   right: 0px;
   font-weight: 700;
   color: #353535;
-  transition: 220ms ease-in-out;
+  transition: 200ms;
 }
 .menu .menu__margin--btm {
   margin-bottom: 40px;
