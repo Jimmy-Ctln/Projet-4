@@ -16,6 +16,7 @@ $lnr-gradient:  linear-gradient(359deg, #9356DC -11.44%, #FF79DA 123.93%);
     }  
 }
 
+
 * {
     margin: 0;
     padding: 0;
@@ -101,7 +102,6 @@ $lnr-gradient:  linear-gradient(359deg, #9356DC -11.44%, #FF79DA 123.93%);
         &__title {
             display: flex;
             align-items: baseline;
-            gap: 24px;
             padding: 32px 17px 42px 17px;
             
             @media (min-width: 768px) {
@@ -117,6 +117,7 @@ $lnr-gradient:  linear-gradient(359deg, #9356DC -11.44%, #FF79DA 123.93%);
             
             &__icon--empty { 
                 z-index: 1;
+                padding-left: 28px;
                 cursor: pointer;
                 font-size: 24px;
                 color: black;
@@ -134,7 +135,7 @@ $lnr-gradient:  linear-gradient(359deg, #9356DC -11.44%, #FF79DA 123.93%);
                 background: linear-gradient(#FF79DA, #9356DC);
                 -webkit-text-fill-color: transparent; 
                 color: transparent;
-                right: 48px;
+                right: 24px;
                 z-index: 0;
                 opacity: 0;
                 transition-duration: 400ms;
@@ -157,6 +158,17 @@ $lnr-gradient:  linear-gradient(359deg, #9356DC -11.44%, #FF79DA 123.93%);
         
         animation: menu-delay 2s ease-in-out;
     }
+
+    &__overflow--70 {
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        transition: 200ms ease-in-out;
+    }
+
+    // &__overflow--300 {
+    //     max
+    // }
         
         &__h2 {
             font-weight: 300;
@@ -186,6 +198,13 @@ $lnr-gradient:  linear-gradient(359deg, #9356DC -11.44%, #FF79DA 123.93%);
                         .menu__price {
                             right: 65px;
                         }
+                            @media (max-width: 420px) {
+                                
+                                .menu__overflow--70 {
+                                    max-width: 70%;
+                                    
+                                }
+                            }
                     }
                 }
  
@@ -206,10 +225,25 @@ $lnr-gradient:  linear-gradient(359deg, #9356DC -11.44%, #FF79DA 123.93%);
                     right: -62px;
                     transition: 200ms;
                 }
+
+                
                 
                 &__content:hover::before {
-                    right: 0px;
+                    animation: check-activate 200ms ease-in-out forwards;    
                 }
+
+                
+                @keyframes check-activate {
+
+                    0% {
+                        right: -62px;
+                    }
+                    
+                    100% {
+                        right: 0px;
+                    }
+                }
+
                 
                 
                 &__info {

@@ -93,7 +93,6 @@
 .all__title {
   display: flex;
   align-items: baseline;
-  gap: 24px;
   padding: 32px 17px 42px 17px;
 }
 @media (min-width: 768px) {
@@ -107,6 +106,7 @@
 }
 .all__icon--empty {
   z-index: 1;
+  padding-left: 28px;
   cursor: pointer;
   font-size: 24px;
   color: black;
@@ -123,7 +123,7 @@
   background: linear-gradient(#FF79DA, #9356DC);
   -webkit-text-fill-color: transparent;
   color: transparent;
-  right: 48px;
+  right: 24px;
   z-index: 0;
   opacity: 0;
   transition-duration: 400ms;
@@ -137,6 +137,12 @@
 }
 .menu__dessert {
   animation: menu-delay 2s ease-in-out;
+}
+.menu__overflow--70 {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  transition: 200ms ease-in-out;
 }
 .menu__h2 {
   font-weight: 300;
@@ -166,6 +172,11 @@
 .menu__content:hover .menu__price {
   right: 65px;
 }
+@media (max-width: 420px) {
+  .menu__content:hover .menu__overflow--70 {
+    max-width: 70%;
+  }
+}
 .menu__content::before {
   content: "";
   background-image: url(/images/icons/Check.png);
@@ -183,7 +194,15 @@
   transition: 200ms;
 }
 .menu__content:hover::before {
-  right: 0px;
+  animation: check-activate 200ms ease-in-out forwards;
+}
+@keyframes check-activate {
+  0% {
+    right: -62px;
+  }
+  100% {
+    right: 0px;
+  }
 }
 .menu__info {
   display: flex;
