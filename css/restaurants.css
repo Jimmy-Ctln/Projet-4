@@ -7,6 +7,14 @@
     opacity: 1;
   }
 }
+@keyframes check-activate {
+  0% {
+    right: -62px;
+  }
+  100% {
+    right: 0px;
+  }
+}
 * {
   margin: 0;
   padding: 0;
@@ -138,12 +146,6 @@
 .menu__dessert {
   animation: menu-delay 2s ease-in-out;
 }
-.menu__overflow--70 {
-  overflow: hidden;
-  text-overflow: ellipsis;
-  white-space: nowrap;
-  transition: 200ms ease-in-out;
-}
 .menu__h2 {
   font-weight: 300;
   font-size: 16px;
@@ -155,6 +157,18 @@
   border-bottom: 3px solid #99E2D0;
   padding-bottom: 5px;
   width: 40px;
+}
+.menu__paragraph {
+  font-style: normal;
+  font-weight: 300;
+  font-size: 15px;
+  line-height: 18px;
+}
+.menu__overflow--70 {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  transition: 200ms ease-in-out;
 }
 .menu__content {
   display: flex;
