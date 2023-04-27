@@ -296,12 +296,11 @@ body {
                             bottom: 27px;
         }
 
-                        &__icon--black { 
+                        &__icon--empty { 
                             position: relative;
                             z-index: 1;
                             cursor: pointer;
                             font-size: 24px;
-                            opacity: 1;
                             color: black;
                             &:hover + .restaurant__icon--full{
                                 opacity: 1;

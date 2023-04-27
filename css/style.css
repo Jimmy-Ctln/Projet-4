@@ -270,15 +270,14 @@ body {
   right: 29px;
   bottom: 27px;
 }
-.restaurant__icon--black {
+.restaurant__icon--empty {
   position: relative;
   z-index: 1;
   cursor: pointer;
   font-size: 24px;
-  opacity: 1;
   color: black;
 }
-.restaurant__icon--black:hover + .restaurant__icon--full {
+.restaurant__icon--empty:hover + .restaurant__icon--full {
   opacity: 1;
 }
 .restaurant__icon--full {

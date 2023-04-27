@@ -105,10 +105,30 @@
   font-family: "Shrikhand";
   font-size: 28px;
 }
-.all__icon {
-  font-size: 25px;
+.all__icon--empty {
+  z-index: 1;
   cursor: pointer;
+  font-size: 24px;
+  color: black;
 }
+.all__icon--empty:hover + .all__icon--full {
+  opacity: 1;
+}
+.all__icon--full {
+  position: relative;
+  font-size: 24px;
+  cursor: pointer;
+  background-clip: text;
+  -webkit-background-clip: text;
+  background: linear-gradient(#FF79DA, #9356DC);
+  -webkit-text-fill-color: transparent;
+  color: transparent;
+  right: 48px;
+  z-index: 0;
+  opacity: 0;
+  transition-duration: 400ms;
+}
+
 .menu__entry {
   animation: menu-delay 1s ease-in-out;
 }

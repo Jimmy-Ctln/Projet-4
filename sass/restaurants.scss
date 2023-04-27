@@ -114,14 +114,31 @@ $lnr-gradient:  linear-gradient(359deg, #9356DC -11.44%, #FF79DA 123.93%);
                 font-family: $title-policy;
                 font-size: 28px;
             }
-                &__icon {
-                    font-size: 25px;
-                    cursor: pointer;
-                    
-                        @media (min-width: 768px) {
-                            
-                    }
-        }
+            
+            &__icon--empty { 
+                z-index: 1;
+                cursor: pointer;
+                font-size: 24px;
+                color: black;
+                &:hover + .all__icon--full{
+                    opacity: 1;
+                }
+            }
+            
+            &__icon--full {
+                position: relative;
+                font-size: 24px;
+                cursor: pointer;
+                background-clip: text;
+                -webkit-background-clip: text;
+                background: linear-gradient(#FF79DA, #9356DC);
+                -webkit-text-fill-color: transparent; 
+                color: transparent;
+                right: 48px;
+                z-index: 0;
+                opacity: 0;
+                transition-duration: 400ms;
+            } 
         
 }
 
