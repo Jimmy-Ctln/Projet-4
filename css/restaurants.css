@@ -186,10 +186,8 @@
 .menu__content:hover .menu__price {
   right: 65px;
 }
-@media (max-width: 420px) {
-  .menu__content:hover .menu__overflow--70 {
-    max-width: 70%;
-  }
+.menu__content:hover .menu__overflow--70 {
+  max-width: 70%;
 }
 .menu__content::before {
   content: "";
@@ -209,14 +207,6 @@
 }
 .menu__content:hover::before {
   animation: check-activate 200ms ease-in-out forwards;
-}
-@keyframes check-activate {
-  0% {
-    right: -62px;
-  }
-  100% {
-    right: 0px;
-  }
 }
 .menu__info {
   display: flex;

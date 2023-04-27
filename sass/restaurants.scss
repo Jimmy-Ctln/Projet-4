@@ -214,17 +214,12 @@ $lnr-gradient:  linear-gradient(359deg, #9356DC -11.44%, #FF79DA 123.93%);
                         .menu__price {
                             right: 65px;
                         }
-                            @media (max-width: 420px) {
-                                
-                                .menu__overflow--70 {
-                                    max-width: 70%;
-                                    
-                                }
-                            }
+                            .menu__overflow--70 {
+                                max-width: 70%;
+                        }        
                     }
-                }
- 
-                
+            }
+  
                 &__content::before {
                     content: "";
                     background-image: url(/images/icons/Check.png);
@@ -246,22 +241,9 @@ $lnr-gradient:  linear-gradient(359deg, #9356DC -11.44%, #FF79DA 123.93%);
                 
                 &__content:hover::before {
                     animation: check-activate 200ms ease-in-out forwards;    
-                }
+                }  
 
-                
-                @keyframes check-activate {
 
-                    0% {
-                        right: -62px;
-                    }
-                    
-                    100% {
-                        right: 0px;
-                    }
-                }
-
-                
-                
                 &__info {
                         display: flex;
                         justify-content: space-between;
