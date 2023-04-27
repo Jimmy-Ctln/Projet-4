@@ -110,7 +110,10 @@
 }
 .all__h1 {
   font-family: "Shrikhand";
-  font-size: 28px;
+  font-size: 27px;
+  font-style: italic;
+  font-weight: 400;
+  line-height: 41px;
 }
 .all__icon--empty {
   z-index: 1;
@@ -157,6 +160,11 @@
   border-bottom: 3px solid #99E2D0;
   padding-bottom: 5px;
   width: 40px;
+}
+.menu__h3 {
+  font-style: normal;
+  font-size: 18px;
+  line-height: 21px;
 }
 .menu__paragraph {
   font-style: normal;
@@ -221,6 +229,8 @@
   position: relative;
   right: 0px;
   font-weight: 700;
+  font-size: 15.0431px;
+  line-height: 18px;
   color: #353535;
   transition: 200ms;
 }

@@ -124,7 +124,10 @@ $lnr-gradient:  linear-gradient(359deg, #9356DC -11.44%, #FF79DA 123.93%);
         
             &__h1 {
                 font-family: $title-policy;
-                font-size: 28px;
+                font-size: 27px;
+                font-style: italic;
+                font-weight: 400;
+                line-height: 41px;
             }
             
             &__icon--empty { 
@@ -183,6 +186,12 @@ $lnr-gradient:  linear-gradient(359deg, #9356DC -11.44%, #FF79DA 123.93%);
                 border-bottom: 3px solid #99E2D0;
                 padding-bottom: 5px;
                 width:40px;
+            }
+
+            &__h3 {
+                font-style: normal;
+                font-size: 18px;
+                line-height: 21px;;
             }
 
             &__paragraph {
@@ -256,6 +265,8 @@ $lnr-gradient:  linear-gradient(359deg, #9356DC -11.44%, #FF79DA 123.93%);
                     position: relative;
                     right: 0px;
                     font-weight: 700;
+                    font-size: 15.0431px;
+                    line-height: 18px;
                     color: #353535;
                     transition: 200ms;
                 }
