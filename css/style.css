@@ -65,7 +65,7 @@
 }
 .animation {
   position: absolute;
-  top: -500px;
+  top: -100%;
   width: 100%;
   height: 500px;
   background-color: rgba(147, 86, 220, 0.8);
@@ -100,7 +100,12 @@
   opacity: 1;
 }
 .animation__img {
-  width: 500px;
+  width: 60vw;
+}
+@media (min-width: 768px) {
+  .animation__img {
+    width: 500px;
+  }
 }
 .animation__loading {
   position: absolute;
