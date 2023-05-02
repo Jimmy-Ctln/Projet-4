@@ -29,12 +29,12 @@ $lnr-gradient:  linear-gradient(359deg, #9356DC -11.44%, #FF79DA 123.93%);
 
 @keyframes full-page {
     0% {
-        opacity: 0.2;
+        opacity: 0.4;
         filter: blur(50px);
     }
     
     95% {
-        opacity: 0.5;
+        opacity: 0.7;
         filter: blur(25px)
     }
     
@@ -156,10 +156,8 @@ $lnr-gradient:  linear-gradient(359deg, #9356DC -11.44%, #FF79DA 123.93%);
                         font-size: 24px;
                     } 
                 }
-
-        
+ 
 }
-
 
 * {
     margin:0;
@@ -185,7 +183,7 @@ body {
     width: 100%;
     // padding: 0px 50px;
     box-sizing: border-box;
-    animation: full-page 3s cubic-bezier(.85,.36,.26,.71);
+    animation: full-page 2.8s cubic-bezier(.85,.36,.26,.71);
 }
 
 .logo {
