@@ -25,6 +25,9 @@
   width: 100%;
   box-sizing: border-box;
 }
+.main__container__container {
+  opacity: 1;
+}
 .arrow__icon {
   position: absolute;
   left: 23px;
@@ -122,8 +125,15 @@
   font-size: 24px;
   color: black;
 }
-.all__icon--empty:hover + .all__icon--full {
-  opacity: 1;
+@media (max-width: 767px) {
+  .all__icon--empty:active + .all__icon--full {
+    opacity: 1;
+  }
+}
+@media (min-width: 768px) {
+  .all__icon--empty:hover + .all__icon--full {
+    opacity: 1;
+  }
 }
 .all__icon--full {
   position: relative;
