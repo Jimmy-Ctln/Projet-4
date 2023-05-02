@@ -7,7 +7,7 @@ $lnr-gradient:  linear-gradient(359deg, #9356DC -11.44%, #FF79DA 123.93%);
 
 @keyframes bloc {
     0% {
-      top: -500px;
+      top: -1500px;
       opacity: 1;
       
     }
@@ -22,14 +22,14 @@ $lnr-gradient:  linear-gradient(359deg, #9356DC -11.44%, #FF79DA 123.93%);
     }
 
     100% {
-      top: -500px;
+      top: -1500px;
       opacity: 1;
     }
   }
 
 @keyframes full-page {
     0% {
-        opacity: 0;
+        opacity: 0.2;
         filter: blur(50px);
     }
     
@@ -56,8 +56,9 @@ $lnr-gradient:  linear-gradient(359deg, #9356DC -11.44%, #FF79DA 123.93%);
     }
 
     75% {
-        transform: scaleX(.90);
+        transform: scaleX(.70);
     }
+
     100% {
         transform: scaleX(1);
         opacity: 1;
@@ -90,13 +91,15 @@ $lnr-gradient:  linear-gradient(359deg, #9356DC -11.44%, #FF79DA 123.93%);
 }
 
 .animation {
-            position: absolute;
-            top: -100%;
+            position: fixed;
+            z-index: 2;
+            text-align: center;
+            // top: -1500px;
             width: 100%;
-            height: 500px;
+            height: 100%;
             background-color: rgba(147, 86, 220, 0.8);
-            border: 1px solid white;
-            animation: bloc 3s cubic-bezier(.57,.12,.11,.89); 
+            border: 1px solid rgba(147, 86, 220, 0.8);
+            // animation: bloc 3s cubic-bezier(.57,.12,.11,.89); 
 
 
                 &__bar {
@@ -104,7 +107,7 @@ $lnr-gradient:  linear-gradient(359deg, #9356DC -11.44%, #FF79DA 123.93%);
                     width: 80%;
                     height: 50px;
                     border: 1px solid $primary-color;
-                    top: 80%;
+                    top: 53%;
                     left: 50%;
                     transform: translate(-50%, -50%);
                     border-radius: 20px;
@@ -140,14 +143,18 @@ $lnr-gradient:  linear-gradient(359deg, #9356DC -11.44%, #FF79DA 123.93%);
                
                 &__loading {
                     position: absolute;
-                    font-family: $txt-policy;
-                    font-size: 30px;
+                    width: 80%;
+                    font-size: 100%;
                     text-transform: uppercase;
-                    top: 65%;
+                    font-family: $txt-policy;
+                    top: 48%;
                     left: 50%;
                     transform: translate(-50%, -50%);
                     color: white;
                     animation: loader-opacity 1000ms ease-in-out infinite;
+                    @media (min-width: 768px) {
+                        font-size: 24px;
+                    } 
                 }
 
         
