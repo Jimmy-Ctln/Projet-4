@@ -279,9 +279,11 @@
 }
 @media (min-width: 720px) {
   .contact__logo {
+    position: relative;
+    top: -2px;
     width: 100px;
     padding: 0px;
-    margin: 0px 20px 0px 77px;
+    margin: 0px 40px 0px 77px;
   }
 }
 .contact__icon {

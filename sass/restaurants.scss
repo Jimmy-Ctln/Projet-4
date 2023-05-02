@@ -316,9 +316,11 @@ $lnr-gradient:  linear-gradient(359deg, #9356DC -11.44%, #FF79DA 123.93%);
             width: 115px;
             padding: 0px 0px 16px 0px;
             @media (min-width:720px) {
+                position: relative;
+                top: -2px;
                 width: 100px;
                 padding: 0px;
-                margin: 0px 20px 0px 77px;
+                margin: 0px 40px 0px 77px;
             }
             
         }
