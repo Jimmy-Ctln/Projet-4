@@ -99,7 +99,7 @@ $lnr-gradient:  linear-gradient(359deg, #9356DC -11.44%, #FF79DA 123.93%);
             height: 100%;
             background-color: rgba(147, 86, 220, 0.8);
             border: 1px solid rgba(147, 86, 220, 0.8);
-            animation: bloc 3s cubic-bezier(.57,.12,.11,.89); 
+            // animation: bloc 3s cubic-bezier(.57,.12,.11,.89); 
 
 
                 &__bar {
@@ -184,7 +184,7 @@ body {
     width: 100%;
     // padding: 0px 50px;
     box-sizing: border-box;
-    animation: full-page 2.8s cubic-bezier(.85,.36,.26,.71);
+    // animation: full-page 2.8s cubic-bezier(.85,.36,.26,.71);
 }
 
 .logo {

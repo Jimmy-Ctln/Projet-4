@@ -72,7 +72,6 @@
   height: 100%;
   background-color: rgba(147, 86, 220, 0.8);
   border: 1px solid rgba(147, 86, 220, 0.8);
-  animation: bloc 3s cubic-bezier(0.57, 0.12, 0.11, 0.89);
 }
 .animation__bar {
   position: absolute;
@@ -151,7 +150,6 @@ body {
 .main__container {
   width: 100%;
   box-sizing: border-box;
-  animation: full-page 2.8s cubic-bezier(0.85, 0.36, 0.26, 0.71);
 }
 
 .logo {

@@ -218,7 +218,8 @@ $lnr-gradient:  linear-gradient(359deg, #9356DC -11.44%, #FF79DA 123.93%);
                 overflow: hidden;
                 text-overflow: ellipsis;
                 white-space: nowrap;
-                transition: 200ms ease-in-out;
+                max-width: 100%;
+                transition: max-width 200ms ease-in-out;
             }
                 &__content {
                     display: flex;
@@ -281,7 +282,7 @@ $lnr-gradient:  linear-gradient(359deg, #9356DC -11.44%, #FF79DA 123.93%);
                     font-size: 15.0431px;
                     line-height: 18px;
                     color: #353535;
-                    transition: 200ms;
+                    transition: 200ms ease-in-out;
                 }
 
                     .menu__margin--btm {

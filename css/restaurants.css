@@ -186,7 +186,8 @@
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
-  transition: 200ms ease-in-out;
+  max-width: 100%;
+  transition: max-width 200ms ease-in-out;
 }
 .menu__content {
   display: flex;
@@ -242,7 +243,7 @@
   font-size: 15.0431px;
   line-height: 18px;
   color: #353535;
-  transition: 200ms;
+  transition: 200ms ease-in-out;
 }
 .menu .menu__margin--btm {
   margin-bottom: 40px;
