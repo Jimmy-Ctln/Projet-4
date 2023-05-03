@@ -79,6 +79,14 @@
     height: 460px;
   }
 }
+.restaurant .restaurant__positionnement--57 {
+  -o-object-position: 0% 57%;
+     object-position: 0% 57%;
+}
+.restaurant .restaurant__positionnement--72 {
+  -o-object-position: 0% 72%;
+     object-position: 0% 72%;
+}
 
 @media (min-width: 768px) {
   .all {
