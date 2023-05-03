@@ -1,31 +1,5 @@
-$primary-color: #9356DC;
-$second-color: #FF79DA;
-$third-color: #99E2D0; 
-$title-policy: "Shrikhand";
-$txt-policy: 'Roboto', sans-serif;
-$lnr-gradient:  linear-gradient(359deg, #9356DC -11.44%, #FF79DA 123.93%);
-
-@keyframes menu-delay {
-
-    0% {
-        opacity: 0;
-        translate: 20%;
-    }
-    100% {
-        opacity: 1;
-    }  
-}
-
-@keyframes check-activate {
-
-    0% {
-        right: -62px;
-    }
-    
-    100% {
-        right: 0px;
-    }
-}
+@import 'mixin.scss';
+@import 'base.scss';
 
 
 * {
@@ -171,8 +145,9 @@ $lnr-gradient:  linear-gradient(359deg, #9356DC -11.44%, #FF79DA 123.93%);
 
 .menu {
 
-    &__entry {
+    @include menu-delay;
 
+    &__entry {
         animation: menu-delay 1s ease-in-out;
     }
 
@@ -181,7 +156,6 @@ $lnr-gradient:  linear-gradient(359deg, #9356DC -11.44%, #FF79DA 123.93%);
     }
 
     &__dessert {
-        
         animation: menu-delay 2s ease-in-out;
     }
 
@@ -250,23 +224,19 @@ $lnr-gradient:  linear-gradient(359deg, #9356DC -11.44%, #FF79DA 123.93%);
                     background-repeat: no-repeat;
                     background-size: 20px;
                     background-color: $third-color;
-                    color: red;
                     position: absolute;
                     width: 60px;
                     opacity: 1;
                     height: 75px;
                     bottom: 0px;
                     right: -62px;
-                    transition: 200ms;
+                    transition: all 200ms ease-in-out;
                 }
 
-                
-                
                 &__content:hover::before {
-                    animation: check-activate 200ms ease-in-out forwards;    
-                }  
-
-
+                    right: 0px;
+                }
+                
                 &__info {
                         display: flex;
                         justify-content: space-between;

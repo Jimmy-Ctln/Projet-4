@@ -1,0 +1,116 @@
+// Animation loader 
+
+@mixin bloc {
+    
+    @keyframes bloc {
+        0% {
+          top: -1500px;
+          opacity: 1;
+          
+        }
+        50% {
+          top: 0px;
+          opacity: 1;   
+        }
+    
+        75% {
+            top: 0px;
+            opacity: 1;
+        }
+    
+        100% {
+          top: -1500px;
+          opacity: 1;
+        }
+    }
+}
+
+@mixin full-page {
+    
+    @keyframes full-page {
+        
+        0% {
+            opacity: 0.4;
+            filter: blur(50px);
+        }
+        
+        95% {
+            opacity: 0.7;
+            filter: blur(25px)
+        }
+        
+        100% {
+            opacity: 1;
+            filter: blur(0px)
+        }
+    }
+}
+
+@mixin progress-bar {
+    
+    @keyframes progress-bar {
+        
+        0% {
+            transform: scaleX(.0);
+            opacity: 0;
+        }
+        17% {
+            transform: scaleX(.19);
+        }
+    
+        75% {
+            transform: scaleX(.70);
+        }
+    
+        100% {
+            transform: scaleX(1);
+            opacity: 1;
+        }
+    }
+}
+
+@mixin loader-opacity {
+
+    @keyframes loader-opacity {
+    
+        0%{
+    
+            opacity: 1;
+        }
+    
+        25% {
+            opacity: 0.5;
+        }
+    
+        50% {
+            opacity: 0.1;
+        }
+    
+        75% {
+            opacity: 0.5;
+        }
+    
+        100% {
+            opacity: 1;
+        }
+    
+    }
+}
+
+// Menus of restaurants (restaurant.scss)
+
+@mixin menu-delay {
+    
+    @keyframes menu-delay {
+    
+        0% {
+            opacity: 0;
+            transform: translateY(20%);
+        }
+        100% {
+            opacity: 1;
+        }  
+    }
+}
+
+
