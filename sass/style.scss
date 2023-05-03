@@ -4,103 +4,94 @@
 
 
 .animation {
-    
-    position: fixed;
-    z-index: 2;
-    text-align: center;
-    top: -1500px;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(147, 86, 220, 0.8);
-    border: 1px solid rgba(147, 86, 220, 0.8);
-    @include bloc;
-    animation: bloc 3s cubic-bezier(.57,.12,.11,.89); 
+            position: fixed;
+            z-index: 2;
+            text-align: center;
+            top: -1500px;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(147, 86, 220, 0.8);
+            border: 1px solid rgba(147, 86, 220, 0.8);
+            @include bloc;
+            animation: bloc 3s cubic-bezier(.57,.12,.11,.89); 
 
-    &__bar {
-    
-        position: absolute;
-        width: 80%;
-        height: 50px;
-        border: 1px solid $primary-color;
-        top: 53%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        border-radius: 20px;
-    }
 
-    &__progress {
-    
-        background-color: $third-color;
-        width: 100%;
-        height: 50px;
-        border-radius: 20px;
-        transform-origin: 0% 50%;
-        opacity: 0;
-        @include progress-bar;
-        animation: progress-bar 1000ms forwards;
-        animation-delay: 1.2s;
-    }
+                &__bar {
+                    position: absolute;
+                    width: 80%;
+                    height: 50px;
+                    border: 1px solid $primary-color;
+                    top: 53%;
+                    left: 50%;
+                    transform: translate(-50%, -50%);
+                    border-radius: 20px;
+                }
 
-    &__logo {
-        
-    position: absolute;
-    top: 25%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    opacity: 1;
-    }
+                &__progress {
+                    background-color: $third-color;
+                    width: 100%;
+                    height: 50px;
+                    border-radius: 20px;
+                    transform-origin: 0% 50%;
+                    opacity: 0;
+                    @include progress-bar;
+                    animation: progress-bar 1000ms forwards;
+                    animation-delay: 1.2s;
+                }
 
-    &__img {
-        width: 60vw;
-         @media (min-width: 768px) {
-        
-            width: 500px
-        } 
-    }
+                &__logo {
+                    position: absolute;
+                    top: 25%;
+                    left: 50%;
+                    transform: translate(-50%, -50%);
+                    opacity: 1;
+                    
+                }
+
+                &__img {
+                    width: 60vw;
+                        @media (min-width: 768px) {
+                        width: 500px
+                    } 
+                }
                 
                
-    &__loading {
-    
-        position: absolute;
-        width: 80%;
-        font-size: 100%;
-        text-transform: uppercase;
-        font-family: $txt-policy;
-        margin-bottom: 10px;
-        top: 48%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        color: white;
-        @include loader-opacity;
-        animation: loader-opacity 1000ms ease-in-out infinite;
-                @media (min-width: 768px) {
-                    
-                    font-size: 24px;
-                } 
-    }
+                &__loading {
+                    position: absolute;
+                    width: 80%;
+                    font-size: 100%;
+                    text-transform: uppercase;
+                    font-family: $txt-policy;
+                    margin-bottom: 10px;
+                    top: 48%;
+                    left: 50%;
+                    transform: translate(-50%, -50%);
+                    color: white;
+                    @include loader-opacity;
+                    animation: loader-opacity 1000ms ease-in-out infinite;
+                    @media (min-width: 768px) {
+                        font-size: 24px;
+                    } 
+                }
  
 }
 
 
 h2 {
-    
     font-size: 24px;
     font-weight: 700;
 }
 
 h3 {
-    
     font-size: 18px;
     font-weight: 700;
 }
 
 body {
-    
     margin: 0;
 }
 
 .main__container {
-    
     width: 100%;
     box-sizing: border-box;
     @include full-page;
@@ -108,7 +99,6 @@ body {
 }
 
 .logo {
-
     position: relative;
     box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.15);
     text-align: center;
@@ -116,7 +106,6 @@ body {
     @media (min-width:768px) {
         padding: 31px 0px 31px 0px;
     }
-    
     .logo__img {
         width: 162px;
         @media (min-width:768px) {
@@ -128,74 +117,64 @@ body {
 
 
 .location {
-    
     @include flex-align-center;
     justify-content: center;
     gap: 17px;
     padding: 15.5px;
     margin-top: 1px;
     background-color: #EAEAEA;
-    
-    &__city {
-        
-        font-size: 16px;
-        font-weight: 500;
+        &__city {
+            font-size: 16px;
+            font-weight: 500;
     }
 
     &__color {
-        
         color: #353535;
     }
 }
 
 
 .title {
-    
     @include flex-align-center;
     flex-direction: column;
     text-align: center;
     padding: 30px 0px 57px 0px;
     background-color: #F7F7F7;
-        @media (min-width:960px) {
-            margin-top: 0px;
-            padding: 30px 0px 30px 0px;
-            background-color: #F6F6F6;
-        }
+    @media (min-width:960px) {
+        margin-top: 0px;
+        padding: 30px 0px 30px 0px;
+        background-color: #F6F6F6;
+    }
     
-    &__h2 {
-    
+        &__h2 {
         padding: 0px 58px 0px 42px;
         margin-bottom: 10px;
-            @media (min-width: 956px) {
-                font-size: 40px;
-                margin-bottom: 18px;
-            }
+        @media (min-width: 956px) {
+            font-size: 40px;
+            margin-bottom: 18px;
+        }
     }
-    
-    &__p {
-        
-        padding: 0px 26px 0px 34px;
-        color: #353535;
+            &__p {
+            padding: 0px 26px 0px 34px;
+            color: #353535;
     }
-    
-    .btn_explore_restaurants {
+        .btn_explore_restaurants {
             
-        @include button;
-        padding: 13px 18.75px;
-        font-size: 16px;
-        margin-top: 27px;
-            @media (min-width:768px) {
-                margin-top: 18px;
-            }
+            @include button;
+            padding: 13px 18.75px;
+            font-size: 16px;
+            margin-top: 27px;
+                @media (min-width:768px) {
+                    margin-top: 18px;
+                }
             
-    }
+        }
 }
 
 
 // MAIN
 
 .step {
-    
     display: flex;
     flex-direction: column;
     margin-top: 48px;
@@ -203,7 +182,6 @@ body {
 
     
     &__h2 {
-        
         padding: 0px 0px 26px 20px;
 
         @media (min-width: 956px) {
@@ -223,7 +201,6 @@ body {
 
 
 .btn {
-    
     display: flex;
     flex-direction: column;
     padding: 0px 20px 60px 20px;;
@@ -234,17 +211,15 @@ body {
         gap: 36px;
         
     }
-    
-    .btn__content {
-        
-        @include flex-align-center;
-        position: relative;
-        cursor: pointer;
-        box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.15);
-        border-radius: 20px;
-        padding: 28.59px 38px ;
-        gap: 27px;
-            &:hover > .btn__icon  {
+        .btn__content {
+            @include flex-align-center;
+            position: relative;
+            cursor: pointer;
+            box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.15);
+            border-radius: 20px;
+            padding: 28.59px 38px ;
+            gap: 27px;
+             &:hover > .btn__icon  {
                  color: #9356DC;
             }
 
@@ -253,34 +228,30 @@ body {
                 gap: 15px;
                 
             }
-    }
-    
-    &__icon {
-    
-        font-size: 18px;
-    }
+        }
+            &__icon {
+            font-size: 18px;
+        }
 
-    &__color--grey {
-        
-        color: #7E7E7E;
-    }
+        &__color--grey {
+            color: #7E7E7E;
+        }
             
-    &__number {
-            
-        @include flex-align-center;
-        justify-content: center;
-        position: absolute;
-        transform: translate(-50%, -50%);
-        left: 1px;
-        bottom: 12px;
-        border-radius: 25px;
-        background-color: $primary-color;
-        font-size: 14.18px ;
-        width: 15.27px;
-        height: 14.55px;
-        padding: 5px;
-        color: white;
-    }
+        &__number {
+                @include flex-align-center;
+                justify-content: center;
+                position: absolute;
+                transform: translate(-50%, -50%);
+                left: 1px;
+                bottom: 12px;
+                border-radius: 25px;
+                background-color: $primary-color;
+                font-size: 14.18px ;
+                width: 15.27px;
+                height: 14.55px;
+                padding: 5px;
+                color: white;
+        }
 }
 
 
@@ -290,24 +261,23 @@ body {
 
     background-color: #F7F7F7;
     padding-bottom: 50px;
-        @media (min-width:768px) {
-            padding: 0px 50px 10px 50px;
-        }
+    @media (min-width:768px) {
+        padding: 0px 50px 10px 50px;
+    }
 
-        @media (min-width: 1300px) {
-            padding: 0px 172.78px 10px 172.78px;
-        }
+    @media (min-width: 1300px) {
+        padding: 0px 172.78px 10px 172.78px;
+    }
 
     &__h2 {
-        
         padding: 54px 0px 20px 20px;
-            @media (min-width:768px) {
-                padding: 20px 0px 20px 20px;
-            }
+        @media (min-width:768px) {
+            padding: 20px 0px 20px 20px;
+        }
+        
     }
 
     &__all {
-        
         display: block;
         padding: 0px 15px 0px 14px;
         
@@ -327,165 +297,154 @@ body {
         text-decoration: none;
     }
     
-    &__new {
-        position: absolute;
-        right: 13px;
-        top: 11px;
-        font-size: 14px;
-        color: #008766;
-        box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.15);
-        border-radius: 2px;
-        background-color: $third-color;
-        padding: 7px 9.63px 6px 9px;
-    }
-    
-    &__poster {
-        
-        position: relative;
-        width: 100%;
-        border-radius: 15px;
-        margin-bottom: 20px;
-        box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
-    }    
-    
-    .restaurant__img {
-        
-        width: 100%;
-        height: 200px;
-        object-fit: cover;
-        object-position: 0% 59%;
-        border-radius: 15px 15px 0px 0px;
-        box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
-            @media (min-width: 768px) {
-                height: 231px;
-            }
-    }
-                
-    &__content {
-        
-        display: flex;
-        padding: 16px 0px 12px 13px;
-        gap: 120px;
-    }
-                
-    &__txt{
-        
-        padding-bottom: 5px;
-    }
-
-    &__heart {
-            
-        position: absolute;
-        right: 29px;
-        bottom: 27px;
-    }
-
-    &__icon--empty { 
-        position: relative;
-        z-index: 1;
-        cursor: pointer;
-        font-size: 24px;
-        color: black;
-        &:hover + .restaurant__icon--full{
-        opacity: 1;
+       &__new {
+            position: absolute;
+            right: 13px;
+            top: 11px;
+            font-size: 14px;
+            color: #008766;
+            box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.15);
+            border-radius: 2px;
+            background-color: $third-color;
+            padding: 7px 9.63px 6px 9px;
+        }
+            &__poster {
+                position: relative;
+                width: 100%;
+                border-radius: 15px;
+                margin-bottom: 20px;
+                box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
         }    
-    }
-                        
-    &__icon--full {
+                .restaurant__img {
+                    width: 100%;
+                    height: 200px;
+                    object-fit: cover;
+                    object-position: 0% 59%;
+                    border-radius: 15px 15px 0px 0px;
+                    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
+                    @media (min-width: 768px) {
+                        height: 231px;
+                    }
+        }
+                
+                    &__content {
+                        display: flex;
+                        padding: 16px 0px 12px 13px;
+                        gap: 120px;
+        }
+                
+                    &__txt{
+                            padding-bottom: 5px;
+        }
 
-        position: absolute;
-        font-size: 24px;
-        cursor: pointer;
-        background-clip: text;
-        -webkit-background-clip: text;
-        background: linear-gradient(#FF79DA, #9356DC);
-        -webkit-text-fill-color: transparent; 
-        color: transparent;
-        left: 0;
-        z-index: 0;
-        opacity: 0;
-        transition-duration: 400ms;
-    }                        
+                    &__heart {
+                            position: absolute;
+                            right: 29px;
+                            bottom: 27px;
+        }
+
+                        &__icon--empty { 
+                            position: relative;
+                            z-index: 1;
+                            cursor: pointer;
+                            font-size: 24px;
+                            color: black;
+                            &:hover + .restaurant__icon--full{
+                                opacity: 1;
+                            }    
+                        }
+                        
+                        
+                        &__icon--full {
+                            position: absolute;
+                            font-size: 24px;
+                            cursor: pointer;
+                            background-clip: text;
+                            -webkit-background-clip: text;
+                            background: linear-gradient(#FF79DA, #9356DC);
+                            -webkit-text-fill-color: transparent; 
+                            color: transparent;
+                            left: 0;
+                            z-index: 0;
+                            opacity: 0;
+                            transition-duration: 400ms;
+                        }                        
+                        
 }
 
 // SECTION CONTACT
 
 .contact {
-    
     padding: 25px 0px 22px 25px;
     background-color: #353535;
-        @media (min-width:740px) {
-            display: flex;
-            flex-direction: row-reverse;
-            padding: 57px 26.42px 30px 16px;
+    @media (min-width:740px) {
+        display: flex;
+        flex-direction: row-reverse;
+        padding: 57px 26.42px 30px 16px;
         
-        }
+    }
         
     &__logo {
-            
-        width: 115px;
-        padding: 0px 0px 16px 0px;
+            width: 115px;
+            padding: 0px 0px 16px 0px;
             @media (min-width:740px) {
                 position: relative;
                 top: -2px;
                 width: 100px;
                 padding: 0px;
                 margin: 0px 20px 0px 100px;
+            }
         }
-    }
     
-    &__icon {
-        
-        width: 11px;
-        height: 13px;
-        font-size: 14px ;
-        color: #FFFFFF;
-    }
-
-    &__ul {
-        
-        display: block;
-        @media (min-width:740px) {
-            display: flex;
-            gap: 10px;    
+        &__icon {
+            width: 11px;
+            height: 13px;
+            font-size: 14px ;
+            color: #FFFFFF;
         }
-    }
+
+        &__ul {
+            display: block;
+            @media (min-width:740px) {
+                display: flex;
+                gap: 10px;
+                
+            }
+        }
         
-    &__link li {
-        
-        @include flex-align-center;
-        gap: 17px;
-        padding-top: 12px;
-        list-style-type: none;
+        &__link li {
+            @include flex-align-center;
+            gap: 17px;
+            padding-top: 12px;
+            list-style-type: none;
             @media (min-width:740px) {
                 padding: 0;
                 
+            }
         }
-    }
 
-    &__link {
-        
-        display: block;
-    }
-    
-    &__link a {
-        
-        color: white;
-        text-decoration: none;
-        
-    }
-    
-    &__mgn__left--7 {
-        @media (min-width:768px) {   
-            margin-left: 7px;
+        &__link {
+            display: block;
         }
-    }
+        
+        &__link a {
+            color: white;
+            text-decoration: none;
+            
+        }
+        
+        &__mgn__left--7 {
+            @media (min-width:768px) {   
+                margin-left: 7px;
+            }
+        }
 
-    &__mgn__left--30 {
-        @media (min-width:768px) {   
-            margin-left: 30px;
+        &__mgn__left--30 {
+            @media (min-width:768px) {   
+                margin-left: 30px;
+            }
         }
-    }
+
 }
 
 
