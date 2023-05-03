@@ -2,13 +2,6 @@
 @import 'base.scss';
 
 
-* {
-    margin: 0;
-    padding: 0;
-    font-family: $txt-policy;
-
-}
-
 .main__container {
     width: 100%;
     box-sizing: border-box;
@@ -90,9 +83,8 @@
         background-color: #F7F7F7;
         border-radius: 40px 40px 0px 0px;
         @media (min-width: 1024px) {
-            display: flex;
+            @include flex-align-center;
             flex-direction: column;
-            align-items: center;
             width: 80%;
         }
     }   
@@ -267,20 +259,11 @@
     width: 100%;
 
     .btn__order {
-        text-align: center;
+        
+        @include button;
         width: 186px;
-        border-radius: 25px;
         padding: 13px 2px;
         margin-bottom: 40px;
-        background: $lnr-gradient;
-            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
-            color: white;
-            cursor: pointer;
-            transition: opacity 450ms;
-                &:hover {
-                    opacity: 0.8;
-                    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.25);
-            }
     }
 }
 
@@ -325,8 +308,7 @@
             }
 
             &__link li {
-                display: flex;
-                align-items: center;
+                @include flex-align-center;
                 gap: 17px;
                 padding-top: 12px;
                 list-style-type: none;
@@ -338,9 +320,6 @@
     
             &__link {
                 display: block;
-                @media (min-width:720px) {
-                    
-                }
                 
             }
             

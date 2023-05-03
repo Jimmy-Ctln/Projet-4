@@ -4,3 +4,10 @@ $third-color: #99E2D0;
 $title-policy: "Shrikhand";
 $txt-policy: 'Roboto', sans-serif;
 $lnr-gradient:  linear-gradient(359deg, #9356DC -11.44%, #FF79DA 123.93%);
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: $txt-policy;
+}
+

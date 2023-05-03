@@ -76,11 +76,6 @@
  
 }
 
-* {
-    margin:0;
-    padding: 0;
-    font-family: $txt-policy;
-}
 
 h2 {
     font-size: 24px;
@@ -122,9 +117,8 @@ body {
 
 
 .location {
-    display: flex;
+    @include flex-align-center;
     justify-content: center;
-    align-items: center;
     gap: 17px;
     padding: 15.5px;
     margin-top: 1px;
@@ -141,9 +135,8 @@ body {
 
 
 .title {
-    display: flex;
+    @include flex-align-center;
     flex-direction: column;
-    align-items: center;
     text-align: center;
     padding: 30px 0px 57px 0px;
     background-color: #F7F7F7;
@@ -166,25 +159,14 @@ body {
             color: #353535;
     }
         .btn_explore_restaurants {
-            text-align: center;
-            border-radius: 25px;
+            
+            @include button;
             padding: 13px 18.75px;
             font-size: 16px;
-            background: $lnr-gradient;
-            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
-            color: white;
             margin-top: 27px;
-            cursor: pointer;
-            &:hover{
-                    opacity: 0.8;
-                    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.25);
+                @media (min-width:768px) {
+                    margin-top: 18px;
                 }
-            
-
-            
-            @media (min-width:768px) {
-                margin-top: 18px;
-            }
             
         }
 }
@@ -230,8 +212,7 @@ body {
         
     }
         .btn__content {
-            display: flex;
-            align-items: center;
+            @include flex-align-center;
             position: relative;
             cursor: pointer;
             box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.15);
@@ -257,9 +238,8 @@ body {
         }
             
         &__number {
-                display: flex;
+                @include flex-align-center;
                 justify-content: center;
-                align-items: center;
                 position: absolute;
                 transform: translate(-50%, -50%);
                 left: 1px;
@@ -433,8 +413,7 @@ body {
         }
         
         &__link li {
-            display: flex;
-            align-items: center;
+            @include flex-align-center;
             gap: 17px;
             padding-top: 12px;
             list-style-type: none;
