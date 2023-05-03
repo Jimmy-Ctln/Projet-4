@@ -259,22 +259,11 @@ body {
             color: white;
             margin-top: 27px;
             cursor: pointer;
-                
-            @media (max-width:767px) {
-                
-                &:active{
+            &:hover{
                     opacity: 0.8;
                     box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.25);
                 }
-            }
-
-            @media (min-width:768px) {
-                
-                &:hover{
-                    opacity: 0.8;
-                    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.25);
-                }
-            }
+            
 
             
             @media (min-width:768px) {
@@ -464,19 +453,9 @@ body {
                             cursor: pointer;
                             font-size: 24px;
                             color: black;
-                            @media (max-width:767px) {
-                                
-                                &:active + .restaurant__icon--full{
-                                    opacity: 1;
-                                }
-                            }
-
-                            @media (min-width: 768px) {
-                                
-                                &:hover + .restaurant__icon--full{
-                                    opacity: 1;
-                                }
-                            }
+                            &:hover + .restaurant__icon--full{
+                                opacity: 1;
+                            }    
                         }
                         
                         

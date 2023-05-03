@@ -147,18 +147,8 @@ $lnr-gradient:  linear-gradient(359deg, #9356DC -11.44%, #FF79DA 123.93%);
                 cursor: pointer;
                 font-size: 24px;
                 color: black;
-                
-                @media (max-width: 767px) {
-                                
-                    &:active + .all__icon--full{
-                        opacity: 1;
-                    }
-                }
-                
-                @media (min-width: 768px) {          
-                    &:hover + .all__icon--full{
-                        opacity: 1;
-                    }
+                &:hover + .all__icon--full{
+                        opacity: 1;   
                 }
             }
             
