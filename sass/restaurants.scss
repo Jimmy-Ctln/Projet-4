@@ -8,9 +8,6 @@
         &__container {
             opacity: 1;
         }
-    @media (min-width: 768px) {
-        
-    }
 }
 
 .arrow__icon {
@@ -21,7 +18,7 @@
     height: 16px;
     cursor: pointer;
     color: #353535;
-    transition: transform ease-in-out 250ms;
+    transition: transform 250ms ease-in-out;
         &:hover {
             transform: scale(1.5);
         }
@@ -187,10 +184,10 @@
             }
                 &__content {
                     display: flex;
+                    flex-direction: column;
                     position: relative;
                     white-space: nowrap;
                     z-index: 0;
-                    flex-direction: column;
                     margin: 12px ;
                     overflow: hidden;
                     gap: 5px;
