@@ -209,7 +209,7 @@ body {
   padding: 0px 58px 0px 42px;
   margin-bottom: 10px;
 }
-@media (min-width: 768px) {
+@media (min-width: 956px) {
   .title__h2 {
     font-size: 40px;
     margin-bottom: 18px;

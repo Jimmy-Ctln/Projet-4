@@ -74,7 +74,7 @@
   -o-object-fit: cover;
      object-fit: cover;
 }
-@media (min-width: 768px) {
+@media (min-width: 1024px) {
   .restaurant .restaurant__img {
     height: 460px;
   }
@@ -200,6 +200,7 @@
 .menu__content {
   display: flex;
   position: relative;
+  white-space: nowrap;
   z-index: 0;
   flex-direction: column;
   margin: 12px;
