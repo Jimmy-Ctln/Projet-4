@@ -328,10 +328,14 @@ body {
             display: flex;
             align-items: center;
             position: relative;
+            cursor: pointer;
             box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.15);
             border-radius: 20px;
             padding: 28.59px 38px ;
             gap: 27px;
+             &:hover > .btn__icon  {
+                 color: #9356DC;
+            }
 
             @media (min-width:768px) {
                 align-items: center;
@@ -345,10 +349,6 @@ body {
 
         &__color--grey {
             color: #7E7E7E;
-        }
-
-        &__color--purple {
-            color: #9356DC;
         }
             
         &__number {
