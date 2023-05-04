@@ -99,7 +99,6 @@
             &__h1 {
                 font-family: $title-policy;
                 font-size: 27px;
-                font-style: italic;
                 font-weight: 400;
                 line-height: 41px;
             }
@@ -134,6 +133,7 @@
 
 .menu {
 
+
     @include menu-delay;
 
     &__entry {
@@ -147,6 +147,10 @@
     &__dessert {
         animation: menu-delay 2s ease-in-out;
     }
+
+        @media (min-width: 1024px) {
+            width: 634px;
+        }
 
         
         &__h2 {
@@ -188,6 +192,7 @@
                     position: relative;
                     white-space: nowrap;
                     z-index: 0;
+
                     margin: 12px ;
                     overflow: hidden;
                     gap: 5px;

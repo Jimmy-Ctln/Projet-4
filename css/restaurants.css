@@ -106,7 +106,6 @@
 .all__h1 {
   font-family: "Shrikhand";
   font-size: 27px;
-  font-style: italic;
   font-weight: 400;
   line-height: 41px;
 }
@@ -152,6 +151,11 @@
 }
 .menu__dessert {
   animation: menu-delay 2s ease-in-out;
+}
+@media (min-width: 1024px) {
+  .menu {
+    width: 634px;
+  }
 }
 .menu__h2 {
   font-weight: 300;
