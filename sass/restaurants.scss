@@ -201,16 +201,6 @@
         overflow: hidden;
     }
 
-
-    // &__overflow--70 {
-        
-    //     overflow: hidden;
-    //     text-overflow: ellipsis;
-    //     white-space: nowrap;
-    //     max-width: 100%;
-    //     transition: max-width 200ms ease-in-out;
-    // }
-        
     &__content {
         
         display: flex;
@@ -261,9 +251,6 @@
         
         display: flex;
         justify-content: space-between;
-        //     @media (min-width: 768px) {
-        //         gap: 300px;
-        // }
     }
 
     &__price {
