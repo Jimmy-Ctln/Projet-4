@@ -12,8 +12,8 @@
             height: 100%;
             background-color: rgba(147, 86, 220, 0.8);
             border: 1px solid rgba(147, 86, 220, 0.8);
-            @include bloc;
-            animation: bloc 3s cubic-bezier(.57,.12,.11,.89); 
+            // @include bloc;
+            // animation: bloc 3s cubic-bezier(.57,.12,.11,.89); 
 
 
                 &__bar {
@@ -34,8 +34,8 @@
                     border-radius: 20px;
                     transform-origin: 0% 50%;
                     opacity: 0;
-                    @include progress-bar;
-                    animation: progress-bar 1000ms forwards;
+                    // @include progress-bar;
+                    // animation: progress-bar 1000ms forwards;
                     animation-delay: 1.2s;
                 }
 
@@ -68,7 +68,7 @@
                     transform: translate(-50%, -50%);
                     color: white;
                     @include loader-opacity;
-                    animation: loader-opacity 1000ms ease-in-out infinite;
+                    // animation: loader-opacity 1000ms ease-in-out infinite;
                     @media (min-width: 768px) {
                         font-size: 24px;
                     } 
@@ -94,7 +94,7 @@ body {
 .main__container {
     width: 100%;
     box-sizing: border-box;
-    @include full-page;
+    // @include full-page;
     animation: full-page 2.8s cubic-bezier(.85,.36,.26,.71);
 }
 
@@ -361,13 +361,12 @@ body {
                             cursor: pointer;
                             background-clip: text;
                             -webkit-background-clip: text;
-                            background: linear-gradient(#FF79DA, #9356DC);
-                            -webkit-text-fill-color: transparent; 
+                            background-image: linear-gradient(#FF79DA, #9356DC);
                             color: transparent;
                             left: 0;
                             z-index: 0;
                             opacity: 0;
-                            transition-duration: 400ms;
+                            transition: all 400ms ease-in-out;
                         }                        
                         
 }

@@ -120,13 +120,13 @@
                 cursor: pointer;
                 background-clip: text;
                 -webkit-background-clip: text;
-                background: linear-gradient(#FF79DA, #9356DC);
+                background-image: linear-gradient(#FF79DA, #9356DC);
                 -webkit-text-fill-color: transparent; 
                 color: transparent;
                 right: 24px;
                 z-index: 0;
                 opacity: 0;
-                transition-duration: 400ms;
+                transition: all 400ms ease-in-out;
             } 
         
 }
@@ -186,20 +186,21 @@
                 max-width: 100%;
                 transition: max-width 200ms ease-in-out;
             }
-                &__content {
-                    display: flex;
-                    flex-direction: column;
-                    position: relative;
-                    white-space: nowrap;
-                    z-index: 0;
-
-                    margin: 12px ;
-                    overflow: hidden;
-                    gap: 5px;
-                    padding: 15px 12px 12px 15px;
-                    background-color: #FFFFFF;
-                    border-radius: 15.0431px;
-                    box-shadow: 0px 4.01149px 15.0431px rgba(0, 0, 0, 0.1);
+                
+            &__content {
+                
+                display: flex;
+                flex-direction: column;
+                position: relative;
+                white-space: nowrap;
+                z-index: 0;
+                margin: 12px ;
+                overflow: hidden;
+                gap: 5px;
+                padding: 15px 12px 12px 15px;
+                background-color: #FFFFFF;
+                border-radius: 15.0431px;
+                box-shadow: 0px 4.01149px 15.0431px rgba(0, 0, 0, 0.1);
                     &:hover {
                         .menu__price {
                             right: 65px;
