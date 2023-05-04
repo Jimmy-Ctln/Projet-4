@@ -114,11 +114,11 @@ body {
     padding: 31px 0px 31px 0px;
   }
 }
-.logo .logo__img {
+.logo__img {
   width: 162px;
 }
 @media (min-width: 768px) {
-  .logo .logo__img {
+  .logo__img {
     width: 200px;
     height: 34.2px;
   }
@@ -228,7 +228,7 @@ body {
     gap: 36px;
   }
 }
-.btn .btn__content {
+.btn__content {
   display: flex;
   align-items: center;
   position: relative;
@@ -238,11 +238,11 @@ body {
   padding: 28.59px 38px;
   gap: 27px;
 }
-.btn .btn__content:hover > .btn__icon {
+.btn__content:hover > .btn__icon {
   color: #9356DC;
 }
 @media (min-width: 768px) {
-  .btn .btn__content {
+  .btn__content {
     align-items: center;
     gap: 15px;
   }
