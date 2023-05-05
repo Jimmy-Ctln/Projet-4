@@ -1,5 +1,7 @@
 // Animation loader 
 
+// Bloc violet qui descends puis monte et prends toute la page
+
 @mixin bloc {
     
     @keyframes bloc {
@@ -25,6 +27,8 @@
     }
 }
 
+//Derrière le bloc (la page est floutée)
+
 @mixin full-page {
     
     @keyframes full-page {
@@ -45,6 +49,8 @@
         }
     }
 }
+
+// Barre de progression
 
 @mixin progress-bar {
     
@@ -68,6 +74,8 @@
         }
     }
 }
+
+//Clignottement "Chargement des restaurants"
 
 @mixin loader-opacity {
 
@@ -122,6 +130,7 @@
                 box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
                 color: white;
                 cursor: pointer;
+                transition: all 250ms ease-in-out;
                     &:hover{
                         opacity: 0.8;
                         box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.25);  
@@ -136,3 +145,11 @@
     align-items: center;
 }
 
+// overflow: hidden; text-overflow: ellipsis; white-space: nowrap;
+
+@mixin hidden-ellipsis-nowrap {
+        
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+}

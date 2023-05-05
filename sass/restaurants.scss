@@ -179,18 +179,14 @@
     }
 
     &__h3 {
-        overflow: hidden;
-        text-overflow: ellipsis;
-        white-space: nowrap;
+        @include hidden-ellipsis-nowrap;
         font-style: normal;
         font-size: 18px;
         line-height: 21px;;
     }
 
     &__paragraph {
-        overflow: hidden;
-        text-overflow: ellipsis;
-        white-space: nowrap;
+        @include hidden-ellipsis-nowrap;
         font-style: normal;
         font-weight: 300;
         font-size: 15px;
@@ -237,7 +233,7 @@
         position: absolute;
         width: 60px;
         opacity: 1;
-        height: 75px;
+        height: 68px;
         bottom: 0px;
         right: -62px;
         transition: all 200ms ease-in-out;
