@@ -42,7 +42,7 @@
         padding: 20px 0px 20px 0px;
     }
     
-    .logo__img {
+    &__img {
         width: 162px;
         @media (min-width: 1024px) {
             width: 200px;
@@ -274,7 +274,7 @@
     justify-content: center;
     width: 100%;
 
-    .btn__order {
+    &__order {
         
         @include button;
         width: 186px;
