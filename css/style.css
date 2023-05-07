@@ -18,19 +18,15 @@
 @keyframes bloc {
   0% {
     top: -1500px;
-    opacity: 1;
   }
   50% {
     top: 0px;
-    opacity: 1;
   }
   75% {
     top: 0px;
-    opacity: 1;
   }
   100% {
     top: -1500px;
-    opacity: 1;
   }
 }
 .animation__bar {
