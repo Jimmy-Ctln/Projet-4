@@ -310,7 +310,7 @@
 .contact__link li {
   display: flex;
   align-items: center;
-  gap: 17px;
+  gap: 15px;
   padding-top: 12px;
   list-style-type: none;
 }
