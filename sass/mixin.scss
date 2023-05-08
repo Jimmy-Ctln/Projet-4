@@ -1,6 +1,6 @@
 // Animation loader 
 
-// Bloc violet qui descends puis monte et prends toute la page
+// Purple block
 
 @mixin bloc {
     
@@ -23,7 +23,7 @@
     }
 }
 
-//Derrière le bloc (la page est floutée)
+//Behind the block
 
 @mixin full-page {
     
@@ -46,7 +46,7 @@
     }
 }
 
-// Barre de progression
+// Progress bar
 
 @mixin progress-bar {
     
@@ -71,7 +71,7 @@
     }
 }
 
-//Clignottement "Chargement des restaurants"
+// Flashing "Loading restaurants".
 
 @mixin loader-opacity {
 
